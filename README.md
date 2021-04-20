@@ -8,7 +8,7 @@
 
 ### Elasticsearch是什么
 
-![Elastic Stack核心](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch01.png)
+![Elastic Stack核心](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch01.png)
 
 
 
@@ -34,7 +34,7 @@ Stack 技术栈的核心。它可以近乎实时的存储、检索数据；本�
 
 目录结构如下:
 
-![ElasticSearch目录层级](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch 目录层级.png)
+![ElasticSearch目录层级](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch 目录层级.png)
 
 | 目录    | 含义           |
 | ------- | -------------- |
@@ -46,13 +46,13 @@ Stack 技术栈的核心。它可以近乎实时的存储、检索数据；本�
 | modules | 模块目录       |
 | plugins | 插件目录       |
 
-解压后，进入 bin 文件目录，点击 elasticsearch.bat 文件启动 ES 服务![Elasticsearch启动页面](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch启动页面.png)
+解压后，进入 bin 文件目录，点击 elasticsearch.bat 文件启动 ES 服务![Elasticsearch启动页面](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch启动页面.png)
 
 **注意：*9300***端口为 **Elasticsearch** **集群间组件的通信端口，*9200* **端口为浏览器访问的 **http**
 
 **协议** **RESTful** **端口。**
 
-打开浏览器（推荐使用谷歌浏览器），输入地址：http://localhost:9200，测试结果![启动成页面](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch启动成功页面.png)
+打开浏览器（推荐使用谷歌浏览器），输入地址：http://localhost:9200，测试结果![启动成页面](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch启动成功页面.png)
 
 ##### postman安装
 
@@ -62,7 +62,7 @@ Stack 技术栈的核心。它可以近乎实时的存储、检索数据；本�
 
 ​	Postman 下载：https://www.getpostman.com/apps
 
-![potman界面](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/postman页面截图.png)
+![potman界面](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/postman页面截图.png)
 
 
 
@@ -70,7 +70,7 @@ Stack 技术栈的核心。它可以近乎实时的存储、检索数据；本�
 
 ​	**Elasticsearch** 是面向文档型数据库，一条数据在这里就是一个文档。为了方便大家理解，我们将 **Elasticsearch** 里存储文档数据和关系型数据库 **MySQL** 存储数据的概念进行一个类比
 
-![对比mysql](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch与mysql的对比.png)
+![对比mysql](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch与mysql的对比.png)
 
 ES 里的 **Index** 可以看做一个库，而 **Types** 相当于表，**Documents** 则相当于表的行。这里 Types 的概念已经被逐渐弱化，Elasticsearch 6.X 中，一个 index 下已经只能包含一个type，Elasticsearch 7.X 中, Type 的概念已经被删除了。
 
@@ -105,7 +105,7 @@ ES 里的 **Index** 可以看做一个库，而 **Types** 相当于表，**Docum
 
 
 
-![索引-重复创建](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch索引-重复创建.png)
+![索引-重复创建](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch索引-重复创建.png)
 
 ###### 查看所有索引
 
@@ -113,7 +113,7 @@ ES 里的 **Index** 可以看做一个库，而 **Types** 相当于表，**Docum
 
 ​	这里请求路径中的_cat 表示查看的意思，indices 表示索引，所以整体含义就是查看当前 ES服务器中的所有索引，就好像 MySQL 中的 show tables 的感觉，服务器响应结果如下
 
-![索引-查看所有的索引](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch索引-查看所有的索引.png)
+![索引-查看所有的索引](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch索引-查看所有的索引.png)
 
 | 表头           | 含义                                                         |
 | -------------- | ------------------------------------------------------------ |
@@ -136,7 +136,7 @@ ES 里的 **Index** 可以看做一个库，而 **Types** 相当于表，**Docum
 
 ​	请求后，服务器响应结果如下：
 
-![索引-查看指定的索引](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch索引-查看指定的索引.png)
+![索引-查看指定的索引](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch索引-查看指定的索引.png)
 
 ```json
 {
@@ -163,7 +163,7 @@ ES 里的 **Index** 可以看做一个库，而 **Types** 相当于表，**Docum
 
 ​	在 Postman 中，向 ES 服务器发 **DELETE** 请求 ：http://127.0.0.1:9200/user
 
-![索引-删除指定的索引](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch索引-删除指定索引.png)
+![索引-删除指定的索引](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch索引-删除指定索引.png)
 
 ##### 文档相关
 
@@ -184,7 +184,7 @@ ES 里的 **Index** 可以看做一个库，而 **Types** 相当于表，**Docum
 }
 ```
 
-![文档-创建文档](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch文档-创建文档.png)
+![文档-创建文档](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch文档-创建文档.png)
 
 ​	此处发送请求的方式必须为 **POST**，不能是 **PUT**，否则会发生错误
 
@@ -194,7 +194,7 @@ ES 里的 **Index** 可以看做一个库，而 **Types** 相当于表，**Docum
 
 ​	如果想要自定义唯一性标识，需要在创建时指定：http://127.0.0.1:9200/user/_doc/**1**
 
-![文档-自定义id创建文档](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch文档-自定义id创建文档.png)
+![文档-自定义id创建文档](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch文档-自定义id创建文档.png)
 
 ###### 查看文档
 
@@ -202,7 +202,7 @@ ES 里的 **Index** 可以看做一个库，而 **Types** 相当于表，**Docum
 
 ​	在 Postman 中，向 ES 服务器发 **GET** 请求 ：http://127.0.0.1:9200/user/_doc/1
 
-![文档-根据id查询文档](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch文档-根据id查询文档.png)
+![文档-根据id查询文档](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch文档-根据id查询文档.png)
 
 ###### **修改文档**
 
@@ -223,7 +223,7 @@ ES 里的 **Index** 可以看做一个库，而 **Types** 相当于表，**Docum
 
 ​	修改成功后，服务器响应结果：
 
-![文档-全局修改](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch文档-全局修改.png)
+![文档-全局修改](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch文档-全局修改.png)
 
 ######    修改字段
 
@@ -243,11 +243,11 @@ ES 里的 **Index** 可以看做一个库，而 **Types** 相当于表，**Docum
 
 ​	修改成功后，服务器响应结果：
 
-![文档-局部修改](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch文档-局部修改.png)
+![文档-局部修改](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch文档-局部修改.png)
 
 ​	根据唯一性标识，查询文档数据，文档数据已经更新
 
-![文档-根据id查询文档2](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch文档-根据id查询文档2.png)
+![文档-根据id查询文档2](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch文档-根据id查询文档2.png)
 
 ###### **删除文档**
 
@@ -257,11 +257,11 @@ ES 里的 **Index** 可以看做一个库，而 **Types** 相当于表，**Docum
 
 ​	删除成功，服务器响应结果：
 
-![文档-根据id删除文档](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch文档-根据id删除文档.png)
+![文档-根据id删除文档](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch文档-根据id删除文档.png)
 
 ​	删除后再查询当前文档信息
 
-![文档-根据id删除文档再查询](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/图片/ElasticSearch文档-根据id删除文档再查询.png)
+![文档-根据id删除文档再查询](https://github.com/xiaofandegeng/Elasticsearch-study/blob/main/image/ElasticSearch文档-根据id删除文档再查询.png)
 
 ###### **条件删除文档**
 
