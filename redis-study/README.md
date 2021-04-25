@@ -24,7 +24,7 @@
   gcc --version
   ```
 
-  ![gcc版本信息](C:\Users\SHL\Desktop\study\redis-study\image\redis-gccVersion.png)
+  ![gcc版本信息](.\image\redis-gccVersion.png)
 
 - 下载redis的压缩文件放到指定目录，redis官网：[点击这里](http://redis.io)
 
@@ -32,11 +32,11 @@
 
 - 在redis目录下执行make命令，如果出现以下错误，请执行make distclean后，再次执行make命令。
 
-  ![安装出错](C:\Users\SHL\Desktop\study\redis-study\image\redis-安装出错.png)
+  ![安装出错](.\image\redis-安装出错.png)
 
 - 安装目录：/user/local/bin
 
-  ![redis启动目录](C:\Users\SHL\Desktop\study\redis-study\image\redis-启动目录.png)
+  ![redis启动目录](.\image\redis-启动目录.png)
 
 | 目录            | 描述                                                   |
 | --------------- | ------------------------------------------------------ |
@@ -57,7 +57,7 @@
   - 备份redis.conf文件到其他目录： cp /redis目录/redis版本/redis.conf /opt
   - 修改后台启动设置daemonize no 改为 yes
   - 启动redis： /usr/local/bin/redis-server /opt/redis.conf
-  - 查看redis是否启动成功：ps -ef | grep redis![redis启动是否成功](C:\Users\SHL\Desktop\study\redis-study\image\redis-查看是否启动成功.png)
+  - 查看redis是否启动成功：ps -ef | grep redis![redis启动是否成功](.\image\redis-查看是否启动成功.png)
   - 用客户端访问redis：redis-cli
   - redis关闭：redis-cli shutdown
 
@@ -105,7 +105,7 @@
 
 ​	String的数据结构为**简单动态字符串(Simple Dynamic String,缩写SDS)**。是可以修改的字符串，内部结构实现上类似于Java的ArrayList，采用预分配冗余空间的方式来减少内存的频繁分配。
 
-![](C:\Users\SHL\Desktop\study\redis-study\image\redis-string数据结构.png)
+![](.\image\redis-string数据结构.png)
 
 ​	如图中所示，内部为当前字符串实际分配的空间capacity一般要高于实际字符串长度len。当字符串长度小于1M时，扩容都是加倍现有的空间，如果超过1M，扩容时一次只会多扩1M的空间。需要注意的是字符串最大长度为512M。
 
@@ -115,7 +115,7 @@
 
 ​	Redis 列表是简单的字符串列表，按照插入顺序排序。你可以添加一个元素到列表的头部（左边）或者尾部（右边）。它的底层实际是个**双向链表**，对两端的操作性能很高，通过索引下标的操作中间的节点性能会较差。
 
-![list底层结构](C:\Users\SHL\Desktop\study\redis-study\image\redis-list底层结构.png)
+![list底层结构](.\image\redis-list底层结构.png)
 
 #### 常用命令
 
@@ -137,7 +137,7 @@
 
 ​	首先在列表元素较少的情况下会使用一块连续的内存存储，这个结构是ziplist，也即是压缩列表。它将所有的元素紧挨着一起存储，分配的是一块连续的内存。当数据量比较多的时候才会改成quicklist。
 
-![list数据结构](C:\Users\SHL\Desktop\study\redis-study\image\redis-list数据结构.png)
+![list数据结构](.\image\redis-list数据结构.png)
 
 ###  集合(set)
 
@@ -214,11 +214,11 @@
 ​	zset底层使用了两个数据结构
 
 * hash，hash的作用就是关联元素value和权重score，保障元素value的唯一性，可以通过元素value找到相应的score值。
-* 跳跃表，跳跃表的目的在于给元素value排序，根据score的范围获取元素列表。![zset数据结构](C:\Users\SHL\Desktop\study\redis-study\image\redis-zset数据结构.png)
+* 跳跃表，跳跃表的目的在于给元素value排序，根据score的范围获取元素列表。![zset数据结构](.\image\redis-zset数据结构.png)
 
 
 
-## 发布订阅消息
+## redis的发布和订阅
 
 ​	Redis 发布订阅 (pub/sub) 是一种消息通信模式：发送者 (pub) 发送消息，订阅者 (sub) 接收消息。Redis 客户端可以订阅任意数量的频道。
 
@@ -228,11 +228,11 @@
 
 ​	客户端订阅频道：
 
-![redis消息的发布和订阅](C:\Users\SHL\Desktop\study\redis-study\image\redis-发布订阅消息1.png)
+![redis消息的发布和订阅](.\image\redis-发布订阅消息1.png)
 
 ​	当这个频道发布消息后，消息就会发送给订阅的客户
 
-![发生消息](C:\Users\SHL\Desktop\study\redis-study\image\redis-发布订阅消息2.png)
+![发生消息](.\image\redis-发布订阅消息2.png)
 
 
 
@@ -240,11 +240,11 @@
 
 - 打开一个客户端订阅channel1：subscribe channel1
 
-![客户端订阅消息](C:\Users\SHL\Desktop\study\redis-study\image\redis-发布订阅消息3.png)
+![客户端订阅消息](.\image\redis-发布订阅消息3.png)
 
 - 打开另一个客户端，给channel1发布消息hello：publish channel1 hello
 
-  ![发布消息](C:\Users\SHL\Desktop\study\redis-study\image\redis-发布订阅消息4.png)
+  ![发布消息](.\image\redis-发布订阅消息4.png)
 
   
 
@@ -252,7 +252,7 @@
 
 - 打开第一个客户端可以看到发送的消息
 
-  ![获得发送消息](C:\Users\SHL\Desktop\study\redis-study\image\redis-发布订阅消息5.png)
+  ![获得发送消息](.\image\redis-发布订阅消息5.png)
 
 ## redis新数据类型
 
@@ -300,3 +300,168 @@
 | geodist<key><member1><member2>  [m\|km\|ft\|mi ]             | 获取两个位置之间的直线距离                 |
 | georadius<key>< longitude><latitude>radius m\|km\|ft\|mi     | 以给定的经纬度为中心，找出某一半径内的元素 |
 
+## redis Jedis测试
+
+### maven导入相关依赖
+
+```java
+<dependency>
+    <groupId>redis.clients</groupId>
+    <artifactId>jedis</artifactId>
+    <version>3.2.0</version>
+</dependency>
+```
+
+### 连接时的注意事项
+
+- 禁用linux的防火墙
+
+  ```shell
+  systemctl status firewall
+  systemctl stop firewall
+  ```
+
+  测试代码详见 [jedis代码](./jedisdemo)
+
+## redis与springboot的整合
+
+- 导入依赖
+
+  ```java
+  <!-- redis -->
+  <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+  </dependency>
+  
+  <!-- spring2.X集成redis所需common-pool2-->
+  <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-pool2</artifactId>
+      <version>2.6.0</version>
+  </dependency>
+  ```
+
+- application.properties 配置redis
+
+```
+#Redis服务器地址
+spring.redis.host=192.168.140.136
+#Redis服务器连接端口
+spring.redis.port=6379
+#Redis数据库索引（默认为0）
+spring.redis.database= 0
+#连接超时时间（毫秒）
+spring.redis.timeout=1800000
+#连接池最大连接数（使用负值表示没有限制）
+spring.redis.lettuce.pool.max-active=20
+#最大阻塞等待时间(负数表示没限制)
+spring.redis.lettuce.pool.max-wait=-1
+#连接池中的最大空闲连接
+spring.redis.lettuce.pool.max-idle=5
+#连接池中的最小空闲连接
+spring.redis.lettuce.pool.min-idle=0
+```
+
+- 添加redis配置类
+
+```java
+@EnableCaching
+@Configuration
+public class RedisConfig extends CachingConfigurerSupport {
+
+    @Bean
+    public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
+        RedisTemplate<String, Object> template = new RedisTemplate<>();
+        RedisSerializer<String> redisSerializer = new StringRedisSerializer();
+        Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
+        ObjectMapper om = new ObjectMapper();
+        om.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
+        om.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+        jackson2JsonRedisSerializer.setObjectMapper(om);
+        template.setConnectionFactory(factory);
+        //key序列化方式
+        template.setKeySerializer(redisSerializer);
+        //value序列化
+        template.setValueSerializer(jackson2JsonRedisSerializer);
+        //value hashmap序列化
+                                    		  template.setHashValueSerializer(jackson2JsonRedisSerializer);
+        return template;
+    }
+
+    @Bean
+    public CacheManager cacheManager(RedisConnectionFactory factory) {
+        RedisSerializer<String> redisSerializer = new StringRedisSerializer();
+        Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
+        //解决查询缓存转换异常的问题
+        ObjectMapper om = new ObjectMapper();
+        om.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
+        om.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+        jackson2JsonRedisSerializer.setObjectMapper(om);
+        // 配置序列化（解决乱码的问题）,过期时间600秒
+        RedisCacheConfiguration config = RedisCacheConfiguration.defaultCacheConfig()
+                .entryTtl(Duration.ofSeconds(600))
+                .serializeKeysWith(RedisSerializationContext.SerializationPair.fromSerializer(redisSerializer))
+                .serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(jackson2JsonRedisSerializer))
+                .disableCachingNullValues();
+        RedisCacheManager cacheManager = RedisCacheManager.builder(factory)
+                .cacheDefaults(config)
+                .build();
+        return cacheManager;
+    }
+}        
+```
+
+- 测试一下
+
+```
+@RestController
+@RequestMapping("/redisTest")
+public class RedisTestController {
+    @Autowired
+    private RedisTemplate redisTemplate;
+
+    @GetMapping
+    public String testRedis() {
+        //设置值到redis
+        redisTemplate.opsForValue().set("name","lucy");
+        //从redis获取值
+        String name = (String)redisTemplate.opsForValue().get("name");
+        return name;
+    }
+}
+```
+
+## redis事务
+
+​	Redis事务是一个单独的隔离操作：事务中的所有命令都会序列化、按顺序地执行。事务在执行的过程中，不会被其他客户端发送来的命令请求所打断。Redis事务的主要作用就是串联多个命令防止别的命令插队。
+
+​	redis事务的主要命令是**multi**，**exec**，**discard**，从输入Multi命令开始，输入的命令都会依次进入命令队列中，但不会执行，直到输入Exec后，Redis会将之前的命令队列中的命令依次执行。组队过程中可以通过**discard**来放弃组队。
+
+![redis事务](./image/redis-事务1.png)
+
+### 事务的错误处理
+
+- 组队中某个命令出现了报告错误，执行时整个的所有队列都会被取消。
+
+![redis事务错误处理](./image/redis-事务2.png)
+
+- 如果执行阶段某个命令报出了错误，则只有报错的命令不会被执行，而其他的命令都会执行，不会回滚。
+
+![redis事务错误处理](./image/redis-事务3.png)
+
+
+
+### redis事务的三特性
+
+- 单独的隔离操作
+
+  ​	事务中的所有命令都会序列化、按顺序地执行。事务在执行的过程中，不会被其他客户端发送来的命令请求所打断。 
+
+- 没有隔离级别概念
+
+  ​	队列中的命令没有提交之前都不会实际被执行，因为事务提交前任何指令都不会被实际执行
+
+- 不保证原子性
+
+  ​	n 事务中如果有一条命令执行失败，其后的命令仍然会被执行，没有回滚 

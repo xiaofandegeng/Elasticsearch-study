@@ -1,12 +1,12 @@
 
-Y
-java:S1128"<Remove this unused import 'com.sun.deploy.util.StringUtils'.(Ï¥¯ö8µ–Ÿå/
-:
-java:S2119O"Save and re-use this "Random".(¼İÅf8ğ­Âä/
-d
-java:S1192"GDefine a constant instead of duplicating this literal "check:" 3 times.(Õğì8İæ™å/
-R
-java:S1191"5Use classes from the Java API instead of Sun classes.(Ï¥¯ö8µ–Ÿå/
 9
 java:S1643S"Use a StringBuilder instead.(ïºõ8µşÇä/
+d
+java:S1192"GDefine a constant instead of duplicating this literal "check:" 3 times.(Õğì8İæ™å/
 X	java:S125"<This block of commented-out lines of code should be removed.(–Ü¶„8Íª¬å/
+Y
+java:S1128"<Remove this unused import 'com.sun.deploy.util.StringUtils'.(Ï¥¯ö8µ–Ÿå/
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(Ï¥¯ö8µ–Ÿå/
+:
+java:S2119O"Save and re-use this "Random".(¼İÅf8ğ­Âä/
