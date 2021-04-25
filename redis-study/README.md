@@ -24,7 +24,7 @@
   gcc --version
   ```
 
-  ![gcc版本信息](../image/redis-gccVersion.png)
+  ![gcc版本信息](./image/redis-gccVersion.png)
 
 - 下载redis的压缩文件放到指定目录，redis官网：[点击这里](http://redis.io)
 
@@ -32,11 +32,11 @@
 
 - 在redis目录下执行make命令，如果出现以下错误，请执行make distclean后，再次执行make命令。
 
-  ![安装出错](../image/redis-安装出错.png)
+  ![安装出错](./image/redis-安装出错.png)
 
 - 安装目录：/user/local/bin
 
-  ![redis启动目录](../image/redis-启动目录.png)
+  ![redis启动目录](./image/redis-启动目录.png)
 
 | 目录            | 描述                                                   |
 | --------------- | ------------------------------------------------------ |
@@ -57,7 +57,7 @@
   - 备份redis.conf文件到其他目录： cp /redis目录/redis版本/redis.conf /opt
   - 修改后台启动设置daemonize no 改为 yes
   - 启动redis： /usr/local/bin/redis-server /opt/redis.conf
-  - 查看redis是否启动成功：ps -ef | grep redis![redis启动是否成功](../image/redis-查看是否启动成功.png)
+  - 查看redis是否启动成功：ps -ef | grep redis![redis启动是否成功](./image/redis-查看是否启动成功.png)
   - 用客户端访问redis：redis-cli
   - redis关闭：redis-cli shutdown
 
@@ -105,7 +105,7 @@
 
 ​	String的数据结构为**简单动态字符串(Simple Dynamic String,缩写SDS)**。是可以修改的字符串，内部结构实现上类似于Java的ArrayList，采用预分配冗余空间的方式来减少内存的频繁分配。
 
-![](../image/redis-string数据结构.png)
+![](./image/redis-string数据结构.png)
 
 ​	如图中所示，内部为当前字符串实际分配的空间capacity一般要高于实际字符串长度len。当字符串长度小于1M时，扩容都是加倍现有的空间，如果超过1M，扩容时一次只会多扩1M的空间。需要注意的是字符串最大长度为512M。
 
@@ -115,7 +115,7 @@
 
 ​	Redis 列表是简单的字符串列表，按照插入顺序排序。你可以添加一个元素到列表的头部（左边）或者尾部（右边）。它的底层实际是个**双向链表**，对两端的操作性能很高，通过索引下标的操作中间的节点性能会较差。
 
-![list底层结构](../image/redis-list底层结构.png)
+![list底层结构](./image/redis-list底层结构.png)
 
 #### 常用命令
 
@@ -137,7 +137,7 @@
 
 ​	首先在列表元素较少的情况下会使用一块连续的内存存储，这个结构是ziplist，也即是压缩列表。它将所有的元素紧挨着一起存储，分配的是一块连续的内存。当数据量比较多的时候才会改成quicklist。
 
-![list数据结构](../image/redis-list数据结构.png)
+![list数据结构](./image/redis-list数据结构.png)
 
 ###  集合(set)
 
@@ -214,7 +214,7 @@
 ​	zset底层使用了两个数据结构
 
 * hash，hash的作用就是关联元素value和权重score，保障元素value的唯一性，可以通过元素value找到相应的score值。
-* 跳跃表，跳跃表的目的在于给元素value排序，根据score的范围获取元素列表。![zset数据结构](../image/redis-zset数据结构.png)
+* 跳跃表，跳跃表的目的在于给元素value排序，根据score的范围获取元素列表。![zset数据结构](./image/redis-zset数据结构.png)
 
 
 
@@ -228,11 +228,11 @@
 
 ​	客户端订阅频道：
 
-![redis消息的发布和订阅](../image/redis-发布订阅消息1.png)
+![redis消息的发布和订阅](./image/redis-发布订阅消息1.png)
 
 ​	当这个频道发布消息后，消息就会发送给订阅的客户
 
-![发生消息](../image/redis-发布订阅消息2.png)
+![发生消息](./image/redis-发布订阅消息2.png)
 
 
 
@@ -240,11 +240,11 @@
 
 - 打开一个客户端订阅channel1：subscribe channel1
 
-![客户端订阅消息](../image/redis-发布订阅消息3.png)
+![客户端订阅消息](./image/redis-发布订阅消息3.png)
 
 - 打开另一个客户端，给channel1发布消息hello：publish channel1 hello
 
-  ![发布消息](../image/redis-发布订阅消息4.png)
+  ![发布消息](./image/redis-发布订阅消息4.png)
 
   
 
@@ -252,7 +252,7 @@
 
 - 打开第一个客户端可以看到发送的消息
 
-  ![获得发送消息](../image/redis-发布订阅消息5.png)
+  ![获得发送消息](./image/redis-发布订阅消息5.png)
 
 ## redis新数据类型
 
