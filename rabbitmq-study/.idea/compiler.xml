@@ -8,9 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-producer" />
         <module name="springboot-consumer" />
+        <module name="spring-rabbitmq-consumer" />
+        <module name="spring-rabbitmq-producer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-rabbitmq-consumer" target="1.8" />
+      <module name="spring-rabbitmq-producer" target="1.8" />
       <module name="springboot-consumer" target="1.8" />
       <module name="springboot-producer" target="8" />
     </bytecodeTargetLevel>

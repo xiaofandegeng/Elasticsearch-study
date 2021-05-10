@@ -5,63 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="257c448d-5346-4c0d-936b-58941b650a28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springboot-consumer/src/main/java/com/itcast/listener/RabbitMQListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-producer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-producer/src/main/java/com/itcast/rabbitmq/ProducerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-producer/src/main/java/com/itcast/rabbitmq/config/RabbitmqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-producer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-producer/src/test/java/com/itcast/rabbitmq/test/ProducerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RabbitMQ集群搭建.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565146596812.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565146626549.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565146679207.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565147002099.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565147066787.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565159392359.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565159873948.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565160404097.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565160464382.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565161799518.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565228864349.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565232264245.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565232295614.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565232321094.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565232562221.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565232593631.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565232640495.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565243306875.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565243605714.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565245219265.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565245328065.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565251253681.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1565251397287.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1566065096459.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1566072300852.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/1566073768274.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rabbitmq-consumer/src/test/java/com/itcast/test/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-consumer/src/test/java/com/itcast/rabbitmq/test/Test01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rabbitmq-producer/src/test/java/com/itcast/test/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-producer/src/test/java/com/itcast/rabbitmq/test/Test01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/RabbitMQ安装说明文档.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565097525717.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565097575497.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565097801642.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565097904202.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565098043833.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565098315375.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565098496482.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565098585317.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565098719054.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565351737008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565526174751.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565526264426.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/软件/assets/1565528746057.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/配置文件/amqp/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/配置文件/spring/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/配置文件/spring/rabbitmq.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/配置文件/spring/spring-rabbitmq-consumer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/配置文件/spring/spring-rabbitmq-producer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/配置文件/springboot/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/配置文件/springboot/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-rabbitmq-producer/src/main/resources/spring-rabbitmq-producer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-producer/src/main/resources/spring-rabbitmq-producer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-rabbitmq-producer/src/test/java/com/itcast/rabbitmq/test/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-producer/src/test/java/com/itcast/rabbitmq/test/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-rabbitmq-producer/target/classes/spring-rabbitmq-producer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-producer/target/classes/spring-rabbitmq-producer.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +23,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -106,6 +60,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot-consumer/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
@@ -113,7 +68,7 @@
       <recent name="C:\Users\SHL\Desktop\study\rabbitmq-study\springboot-consumer\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProducerTest.SendMes">
+  <component name="RunManager" selected="JUnit.Test01.testReturn">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -141,6 +96,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test01.testConfirm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-rabbitmq-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itcast.rabbitmq.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itcast.rabbitmq.test" />
+      <option name="MAIN_CLASS_NAME" value="com.itcast.rabbitmq.test.Test01" />
+      <option name="METHOD_NAME" value="testConfirm" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test01.testReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-rabbitmq-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itcast.rabbitmq.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itcast.rabbitmq.test" />
+      <option name="MAIN_CLASS_NAME" value="com.itcast.rabbitmq.test.Test01" />
+      <option name="METHOD_NAME" value="testReturn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springboot-consumer" />
       <extension name="coverage">
@@ -156,6 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Test01.testReturn" />
+        <item itemvalue="JUnit.Test01.testConfirm" />
         <item itemvalue="JUnit.ProducerTest.SendMes" />
         <item itemvalue="Spring Boot.ConsumerApplication" />
       </list>
@@ -169,7 +158,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620270540893</updated>
-      <workItem from="1620270541998" duration="1388000" />
+      <workItem from="1620270541998" duration="6855000" />
     </task>
     <servers />
   </component>
