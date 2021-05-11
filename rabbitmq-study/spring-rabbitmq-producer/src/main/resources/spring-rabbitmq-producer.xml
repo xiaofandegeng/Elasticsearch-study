@@ -24,52 +24,93 @@
     <!--定义管理交换机、队列-->
     <rabbit:admin connection-factory="connectionFactory"/>
 
-    <!--定义持久化队列，不存在则自动创建；不绑定到交换机则绑定到默认交换机
-    默认交换机类型为direct，名字为：""，路由键为队列的名称
-    -->
-    <rabbit:queue id="spring_queue" name="spring_queue" auto-declare="true"/>
+<!--    &lt;!&ndash;定义持久化队列，不存在则自动创建；不绑定到交换机则绑定到默认交换机-->
+<!--    默认交换机类型为direct，名字为：""，路由键为队列的名称-->
+<!--    &ndash;&gt;-->
+<!--    <rabbit:queue id="spring_queue" name="spring_queue" auto-declare="true"/>-->
 
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~广播；所有队列都能收到消息~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!--定义广播交换机中的持久化队列，不存在则自动创建-->
-    <rabbit:queue id="spring_fanout_queue_1" name="spring_fanout_queue_1" auto-declare="true"/>
+<!--    &lt;!&ndash; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~广播；所有队列都能收到消息~~~~~~~~~~~~~~~~~~~~~~~~~~~~ &ndash;&gt;-->
+<!--    &lt;!&ndash;定义广播交换机中的持久化队列，不存在则自动创建&ndash;&gt;-->
+<!--    <rabbit:queue id="spring_fanout_queue_1" name="spring_fanout_queue_1" auto-declare="true"/>-->
 
-    <!--定义广播交换机中的持久化队列，不存在则自动创建-->
-    <rabbit:queue id="spring_fanout_queue_2" name="spring_fanout_queue_2" auto-declare="true"/>
+<!--    &lt;!&ndash;定义广播交换机中的持久化队列，不存在则自动创建&ndash;&gt;-->
+<!--    <rabbit:queue id="spring_fanout_queue_2" name="spring_fanout_queue_2" auto-declare="true"/>-->
 
-    <!--定义广播类型交换机；并绑定上述两个队列-->
-    <rabbit:fanout-exchange id="spring_fanout_exchange" name="spring_fanout_exchange" auto-declare="true">
-        <rabbit:bindings>
-            <rabbit:binding queue="spring_fanout_queue_1"/>
-            <rabbit:binding queue="spring_fanout_queue_2"/>
-        </rabbit:bindings>
-    </rabbit:fanout-exchange>
+<!--    &lt;!&ndash;定义广播类型交换机；并绑定上述两个队列&ndash;&gt;-->
+<!--    <rabbit:fanout-exchange id="spring_fanout_exchange" name="spring_fanout_exchange" auto-declare="true">-->
+<!--        <rabbit:bindings>-->
+<!--            <rabbit:binding queue="spring_fanout_queue_1"/>-->
+<!--            <rabbit:binding queue="spring_fanout_queue_2"/>-->
+<!--        </rabbit:bindings>-->
+<!--    </rabbit:fanout-exchange>-->
 
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~通配符；*匹配一个单词，#匹配多个单词 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!--定义广播交换机中的持久化队列，不存在则自动创建-->
-    <rabbit:queue id="spring_topic_queue_star" name="spring_topic_queue_star" auto-declare="true"/>
-    <!--定义广播交换机中的持久化队列，不存在则自动创建-->
-    <rabbit:queue id="spring_topic_queue_well" name="spring_topic_queue_well" auto-declare="true"/>
-    <!--定义广播交换机中的持久化队列，不存在则自动创建-->
-    <rabbit:queue id="spring_topic_queue_well2" name="spring_topic_queue_well2" auto-declare="true"/>
+<!--    &lt;!&ndash; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~通配符；*匹配一个单词，#匹配多个单词 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ &ndash;&gt;-->
+<!--    &lt;!&ndash;定义广播交换机中的持久化队列，不存在则自动创建&ndash;&gt;-->
+<!--    <rabbit:queue id="spring_topic_queue_star" name="spring_topic_queue_star" auto-declare="true"/>-->
+<!--    &lt;!&ndash;定义广播交换机中的持久化队列，不存在则自动创建&ndash;&gt;-->
+<!--    <rabbit:queue id="spring_topic_queue_well" name="spring_topic_queue_well" auto-declare="true"/>-->
+<!--    &lt;!&ndash;定义广播交换机中的持久化队列，不存在则自动创建&ndash;&gt;-->
+<!--    <rabbit:queue id="spring_topic_queue_well2" name="spring_topic_queue_well2" auto-declare="true"/>-->
 
-    <rabbit:topic-exchange id="spring_topic_exchange" name="spring_topic_exchange" auto-declare="true">
-        <rabbit:bindings>
-            <rabbit:binding pattern="heima.*" queue="spring_topic_queue_star"/>
-            <rabbit:binding pattern="heima.#" queue="spring_topic_queue_well"/>
-            <rabbit:binding pattern="itcast.#" queue="spring_topic_queue_well2"/>
-        </rabbit:bindings>
-    </rabbit:topic-exchange>
+<!--    <rabbit:topic-exchange id="spring_topic_exchange" name="spring_topic_exchange" auto-declare="true">-->
+<!--        <rabbit:bindings>-->
+<!--            <rabbit:binding pattern="heima.*" queue="spring_topic_queue_star"/>-->
+<!--            <rabbit:binding pattern="heima.#" queue="spring_topic_queue_well"/>-->
+<!--            <rabbit:binding pattern="itcast.#" queue="spring_topic_queue_well2"/>-->
+<!--        </rabbit:bindings>-->
+<!--    </rabbit:topic-exchange>-->
 
     <!--定义rabbitTemplate对象操作可以在代码中方便发送消息-->
     <rabbit:template id="rabbitTemplate" connection-factory="connectionFactory"/>
 
     <!--消息可靠性投递(生产端)    -->
     <rabbit:queue id="test_queue_confirm" name="test_queue_confirm" durable="true">
-
     </rabbit:queue>
     <rabbit:direct-exchange name="test_exchange_confirm">
         <rabbit:bindings>
             <rabbit:binding queue="test_queue_confirm" key="confirm"></rabbit:binding>
         </rabbit:bindings>
     </rabbit:direct-exchange>
+
+    <!--ttl-->
+    <rabbit:queue id="test_queue_ttl" name="test_queue_ttl" durable="true">
+        <rabbit:queue-arguments>
+            <entry key="x-message-ttl" value="200000" value-type="java.lang.Integer">
+            </entry>
+        </rabbit:queue-arguments>
+    </rabbit:queue>
+    <rabbit:topic-exchange name="test_exchange_ttl">
+        <rabbit:bindings>
+            <rabbit:binding queue="test_queue_ttl" pattern="ttl.#"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+
+    <!--  死信队列  -->
+<!--     1.定义正常交换机(test_exchange_dlx)和队列(test_queue_dlx)-->
+<!--     2.定义死信交换机(exchange_dlx)和死信队列(queue_dlx)-->
+<!--     3.正常交换机和死信交换机的绑定-->
+    <rabbit:queue id="test_queue_dlx" name="test_queue_dlx"  durable="true">
+        <rabbit:queue-arguments>
+            <entry key="x-dead-letter-exchange" value="exchange_dlx"/>
+
+            <entry key="x-dead-letter-routing-key" value="dlx.haha"/>
+
+            <entry key="x-max-length" value="10" value-type="java.lang.Integer"/>
+
+            <entry key="x-message-ttl" value="10000" value-type="java.lang.Integer"/>
+
+        </rabbit:queue-arguments>
+    </rabbit:queue>
+    <rabbit:topic-exchange name="test_exchange_dlx">
+        <rabbit:bindings>
+            <rabbit:binding queue="test_queue_dlx" pattern="test.dlx.#"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+
+    <rabbit:queue id="queue_dlx" name="queue_dlx"  durable="true"></rabbit:queue>
+    <rabbit:topic-exchange name="exchange_dlx">
+        <rabbit:bindings>
+            <rabbit:binding queue="queue_dlx" pattern="dlx.#"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
 </beans>
