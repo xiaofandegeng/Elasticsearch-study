@@ -113,4 +113,27 @@
             <rabbit:binding queue="queue_dlx" pattern="dlx.#"></rabbit:binding>
         </rabbit:bindings>
     </rabbit:topic-exchange>
+
+    <!--延迟队列-->
+    <rabbit:queue id="order_queue" name="order_queue">
+        <rabbit:queue-arguments>
+            <entry key="x-dead-letter-exchange" value="order_exchange_dlx"/>
+            <entry key="x-dead-letter-routing-key" value="order.delay.cancel"/>
+            <entry key="x-message-ttl" value="10000" value-type="java.lang.Integer"/>
+        </rabbit:queue-arguments>
+    </rabbit:queue>
+    <rabbit:topic-exchange name="order_exchange" id="order_exchange">
+        <rabbit:bindings>
+            <rabbit:binding pattern="order.#" queue="order_queue"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+
+    <rabbit:queue id="order_queue_dlx" name="order_queue_dlx"></rabbit:queue>
+    <rabbit:topic-exchange name="order_exchange_dlx" id="order_exchange_dlx">
+        <rabbit:bindings>
+            <rabbit:binding pattern="order.delay.#" queue="order_queue_dlx"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+
+
 </beans>

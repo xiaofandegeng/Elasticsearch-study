@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="257c448d-5346-4c0d-936b-58941b650a28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-rabbitmq-consumer/src/main/java/com/itcast/rabbitmq/listener/DlxListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rabbitmq-consumer/src/main/java/com/itcast/rabbitmq/listener/QosListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rabbitmq-consumer/src/main/java/com/itcast/rabbitmq/listener/AckListener1.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-consumer/src/main/java/com/itcast/rabbitmq/listener/AckListener1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rabbitmq-consumer/src/main/java/com/itcast/rabbitmq/listener/DelayListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-rabbitmq-consumer/src/main/resources/spring-rabbitmq-consumer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-consumer/src/main/resources/spring-rabbitmq-consumer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rabbitmq-consumer/target/classes/com/itcast/rabbitmq/listener/AckListener1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-consumer/target/classes/com/itcast/rabbitmq/listener/AckListener1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-rabbitmq-consumer/target/classes/spring-rabbitmq-consumer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-consumer/target/classes/spring-rabbitmq-consumer.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-rabbitmq-producer/src/main/resources/spring-rabbitmq-producer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-producer/src/main/resources/spring-rabbitmq-producer.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-rabbitmq-producer/src/test/java/com/itcast/rabbitmq/test/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-producer/src/test/java/com/itcast/rabbitmq/test/Test01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-rabbitmq-producer/target/classes/spring-rabbitmq-producer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-producer/target/classes/spring-rabbitmq-producer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rabbitmq-producer/target/test-classes/com/itcast/rabbitmq/test/Test01$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-producer/target/test-classes/com/itcast/rabbitmq/test/Test01$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rabbitmq-producer/target/test-classes/com/itcast/rabbitmq/test/Test01$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-producer/target/test-classes/com/itcast/rabbitmq/test/Test01$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-rabbitmq-producer/target/test-classes/com/itcast/rabbitmq/test/Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-producer/target/test-classes/com/itcast/rabbitmq/test/Test01.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +75,7 @@
       <recent name="com.itcast.rabbitmq.listener" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Test01.TestSpringQueue">
+  <component name="RunManager" selected="JUnit.Test01.testDelay">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -90,6 +85,22 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-rabbitmq-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itcast.rabbitmq.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itcast.rabbitmq.test" />
+      <option name="MAIN_CLASS_NAME" value="com.itcast.rabbitmq.test.Test01" />
+      <option name="METHOD_NAME" value="TestSpringQueue" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,7 +121,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test01.testConfirm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test01.testDelay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-rabbitmq-producer" />
       <extension name="coverage">
         <pattern>
@@ -120,7 +131,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.itcast.rabbitmq.test" />
       <option name="MAIN_CLASS_NAME" value="com.itcast.rabbitmq.test.Test01" />
-      <option name="METHOD_NAME" value="testConfirm" />
+      <option name="METHOD_NAME" value="testDelay" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,22 +148,6 @@
       <option name="PACKAGE_NAME" value="com.itcast.rabbitmq.test" />
       <option name="MAIN_CLASS_NAME" value="com.itcast.rabbitmq.test.Test01" />
       <option name="METHOD_NAME" value="testDlx" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test01.testQos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-rabbitmq-producer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itcast.rabbitmq.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itcast.rabbitmq.test" />
-      <option name="MAIN_CLASS_NAME" value="com.itcast.rabbitmq.test.Test01" />
-      <option name="METHOD_NAME" value="testQos" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test01.testDlx" />
+        <item itemvalue="JUnit.Test01.testDelay" />
         <item itemvalue="JUnit.Test01.TestSpringQueue" />
+        <item itemvalue="JUnit.Test01" />
+        <item itemvalue="JUnit.Test01.testDlx" />
         <item itemvalue="JUnit.Test01.testTtl" />
-        <item itemvalue="JUnit.Test01.testQos" />
-        <item itemvalue="JUnit.Test01.testConfirm" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +188,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620270540893</updated>
       <workItem from="1620270541998" duration="6855000" />
-      <workItem from="1620699056715" duration="11280000" />
+      <workItem from="1620699056715" duration="14480000" />
     </task>
     <servers />
   </component>

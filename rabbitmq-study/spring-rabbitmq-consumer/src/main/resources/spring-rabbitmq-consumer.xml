@@ -39,9 +39,10 @@
 <!--    </rabbit:listener-container>-->
 
     <!--  定义监听器  -->
-    <rabbit:listener-container connection-factory="connectionFactory" acknowledge="manual" auto-declare="true" prefetch="1">
+    <rabbit:listener-container connection-factory="connectionFactory" acknowledge="manual" auto-declare="true">
 <!--        <rabbit:listener ref="ackListener1" queue-names="test_queue_confirm"></rabbit:listener>-->
 <!--        <rabbit:listener ref="qosListener" queue-names="test_queue_confirm"></rabbit:listener>-->
-        <rabbit:listener ref="dlxListener" queue-names="test_queue_dlx"></rabbit:listener>
+<!--        <rabbit:listener ref="dlxListener" queue-names="test_queue_dlx"></rabbit:listener>-->
+        <rabbit:listener ref="delayListener" queue-names="order_queue_dlx"></rabbit:listener>
     </rabbit:listener-container>
 </beans>

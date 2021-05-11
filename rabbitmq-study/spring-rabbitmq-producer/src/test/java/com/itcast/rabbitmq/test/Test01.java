@@ -133,4 +133,9 @@ public class Test01 {
         //3.消费者拒绝接收进入死信队列
         rabbitTemplate.convertAndSend("test_exchange_dlx", "test.dlx.haha","我是一条消息，我会死吗？");
     }
+
+    @Test
+    public void testDelay() {
+        rabbitTemplate.convertAndSend("order_exchange", "order.msg","我是一条延迟队列的消息");
+    }
 }
