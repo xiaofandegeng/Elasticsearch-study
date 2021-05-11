@@ -61,7 +61,7 @@ public class Test01 {
         });
 
         // 发送消息
-        rabbitTemplate.convertAndSend("test_exchange_confirm111", "confirm","confirm message....");
+        rabbitTemplate.convertAndSend("test_exchange_confirm", "confirm","confirm message....");
     }
     // 测试回退消息
     @Test
