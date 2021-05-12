@@ -333,9 +333,605 @@ cp rabbitmq.config.example /etc/rabbitmq/rabbitmq.config
 
 ## Spring整合RabbitMq
 
+### 搭建生产者工程
+
+#### 创建工程
+
+​	创建一个maven工程
+
+#### 添加依赖
+
+```java
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.1.7.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+            <version>2.1.8.RELEASE</version>
+        </dependency>
+
+        <!--测试依赖-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.1.7.RELEASE</version>
+        </dependency>
+    </dependencies>
+```
+
+#### 配置整合
+
+- 创建rabbitmq.properties连接参数等配置文件
+
+```properties
+rabbitmq.host=
+rabbitmq.port=5672
+rabbitmq.username=
+rabbitmq.password=
+rabbitmq.virtual-host=
+```
+
+- 创建spring-rabbitmq.xml整合配置文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/rabbit
+       http://www.springframework.org/schema/rabbit/spring-rabbit.xsd">
+    <!--加载配置文件-->
+    <context:property-placeholder location="classpath:properties/rabbitmq.properties"/>
+
+    <!-- 定义rabbitmq connectionFactory -->
+    <rabbit:connection-factory id="connectionFactory" host="${rabbitmq.host}"
+                               port="${rabbitmq.port}"
+                               username="${rabbitmq.username}"
+                               password="${rabbitmq.password}"
+                               virtual-host="${rabbitmq.virtual-host}"/>
+    <!--定义管理交换机、队列-->
+    <rabbit:admin connection-factory="connectionFactory"/>
+
+    <!--定义持久化队列，不存在则自动创建；不绑定到交换机则绑定到默认交换机
+    默认交换机类型为direct，名字为：""，路由键为队列的名称
+    -->
+    <rabbit:queue id="spring_queue" name="spring_queue" auto-declare="true"/>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~广播；所有队列都能收到消息~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!--定义广播交换机中的持久化队列，不存在则自动创建-->
+    <rabbit:queue id="spring_fanout_queue_1" name="spring_fanout_queue_1" auto-declare="true"/>
+
+    <!--定义广播交换机中的持久化队列，不存在则自动创建-->
+    <rabbit:queue id="spring_fanout_queue_2" name="spring_fanout_queue_2" auto-declare="true"/>
+
+    <!--定义广播类型交换机；并绑定上述两个队列-->
+    <rabbit:fanout-exchange id="spring_fanout_exchange" name="spring_fanout_exchange" auto-declare="true">
+        <rabbit:bindings>
+            <rabbit:binding queue="spring_fanout_queue_1"/>
+            <rabbit:binding queue="spring_fanout_queue_2"/>
+        </rabbit:bindings>
+    </rabbit:fanout-exchange>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~通配符；*匹配一个单词，#匹配多个单词 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!--定义广播交换机中的持久化队列，不存在则自动创建-->
+    <rabbit:queue id="spring_topic_queue_star" name="spring_topic_queue_star" auto-declare="true"/>
+    <!--定义广播交换机中的持久化队列，不存在则自动创建-->
+    <rabbit:queue id="spring_topic_queue_well" name="spring_topic_queue_well" auto-declare="true"/>
+    <!--定义广播交换机中的持久化队列，不存在则自动创建-->
+    <rabbit:queue id="spring_topic_queue_well2" name="spring_topic_queue_well2" auto-declare="true"/>
+
+    <rabbit:topic-exchange id="spring_topic_exchange" name="spring_topic_exchange" auto-declare="true">
+        <rabbit:bindings>
+            <rabbit:binding pattern="heima.*" queue="spring_topic_queue_star"/>
+            <rabbit:binding pattern="heima.#" queue="spring_topic_queue_well"/>
+            <rabbit:binding pattern="itcast.#" queue="spring_topic_queue_well2"/>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+
+    <!--定义rabbitTemplate对象操作可以在代码中方便发送消息-->
+    <rabbit:template id="rabbitTemplate" connection-factory="connectionFactory"/>
+</beans>
+```
+
+#### 发送消息
+
+​	创建测试文件ProducerTest.java
+
+```java
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = "classpath:spring/spring-rabbitmq.xml")
+public class ProducerTest {
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
+    /**
+     * 只发队列消息
+     * 默认交换机类型为 direct
+     * 交换机的名称为空，路由键为队列的名称
+     */
+    @Test
+    public void queueTest(){
+        //路由键与队列同名
+        rabbitTemplate.convertAndSend("spring_queue", "只发队列spring_queue的消息。");
+    }
+
+    /**
+     * 发送广播
+     * 交换机类型为 fanout
+     * 绑定到该交换机的所有队列都能够收到消息
+     */
+    @Test
+    public void fanoutTest(){
+        /**
+         * 参数1：交换机名称
+         * 参数2：路由键名（广播设置为空）
+         * 参数3：发送的消息内容
+         */
+        rabbitTemplate.convertAndSend("spring_fanout_exchange", "", "发送到spring_fanout_exchange交换机的广播消息");
+    }
+
+    /**
+     * 通配符
+     * 交换机类型为 topic
+     * 匹配路由键的通配符，*表示一个单词，#表示多个单词
+     * 绑定到该交换机的匹配队列能够收到对应消息
+     */
+    @Test
+    public void topicTest(){
+        /**
+         * 参数1：交换机名称
+         * 参数2：路由键名
+         * 参数3：发送的消息内容
+         */
+        rabbitTemplate.convertAndSend("spring_topic_exchange", "heima.bj", "发送到spring_topic_exchange交换机heima.bj的消息");
+        rabbitTemplate.convertAndSend("spring_topic_exchange", "heima.bj.1", "发送到spring_topic_exchange交换机heima.bj.1的消息");
+        rabbitTemplate.convertAndSend("spring_topic_exchange", "heima.bj.2", "发送到spring_topic_exchange交换机heima.bj.2的消息");
+        rabbitTemplate.convertAndSend("spring_topic_exchange", "itcast.cn", "发送到spring_topic_exchange交换机itcast.cn的消息");
+    }
+}
+```
+
+### 搭建消费者工程
+
+#### 创建工作
+
+​	创建一个maven项目
+
+#### 添加依赖
+
+```xml
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.1.7.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+            <version>2.1.8.RELEASE</version>
+        </dependency>
+```
+
+#### 配置整合
+
+​	创建spring-rabbitmq.xml整合配置文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/rabbit
+       http://www.springframework.org/schema/rabbit/spring-rabbit.xsd">
+    <!--加载配置文件-->
+    <context:property-placeholder location="classpath:properties/rabbitmq.properties"/>
+
+    <!-- 定义rabbitmq connectionFactory -->
+    <rabbit:connection-factory id="connectionFactory" host="${rabbitmq.host}"
+                               port="${rabbitmq.port}"
+                               username="${rabbitmq.username}"
+                               password="${rabbitmq.password}"
+                               virtual-host="${rabbitmq.virtual-host}"/>
+
+    <bean id="springQueueListener" class="com.itheima.rabbitmq.listener.SpringQueueListener"/>
+    <bean id="fanoutListener1" class="com.itheima.rabbitmq.listener.FanoutListener1"/>
+    <bean id="fanoutListener2" class="com.itheima.rabbitmq.listener.FanoutListener2"/>
+    <bean id="topicListenerStar" class="com.itheima.rabbitmq.listener.TopicListenerStar"/>
+    <bean id="topicListenerWell" class="com.itheima.rabbitmq.listener.TopicListenerWell"/>
+    <bean id="topicListenerWell2" class="com.itheima.rabbitmq.listener.TopicListenerWell2"/>
+
+    <rabbit:listener-container connection-factory="connectionFactory" auto-declare="true">
+        <rabbit:listener ref="springQueueListener" queue-names="spring_queue"/>
+        <rabbit:listener ref="fanoutListener1" queue-names="spring_fanout_queue_1"/>
+        <rabbit:listener ref="fanoutListener2" queue-names="spring_fanout_queue_2"/>
+        <rabbit:listener ref="topicListenerStar" queue-names="spring_topic_queue_star"/>
+        <rabbit:listener ref="topicListenerWell" queue-names="spring_topic_queue_well"/>
+        <rabbit:listener ref="topicListenerWell2" queue-names="spring_topic_queue_well2"/>
+    </rabbit:listener-container>
+</beans>
+```
+
+#### 消息监听器
+
+##### 1）队列监听器
+
+创建`SpringQueueListener.java`
+
+```java
+public class SpringQueueListener implements MessageListener {
+    public void onMessage(Message message) {
+        try {
+            String msg = new String(message.getBody(), "utf-8");
+
+            System.out.printf("接收路由名称为：%s，路由键为：%s，队列名为：%s的消息：%s \n",
+                    message.getMessageProperties().getReceivedExchange(),
+                    message.getMessageProperties().getReceivedRoutingKey(),
+                    message.getMessageProperties().getConsumerQueue(),
+                    msg);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
 
 
+##### 2）广播监听器1
+
+创建`FanoutListener1.java`
+
+```java
+public class FanoutListener1 implements MessageListener {
+    public void onMessage(Message message) {
+        try {
+            String msg = new String(message.getBody(), "utf-8");
+
+            System.out.printf("广播监听器1：接收路由名称为：%s，路由键为：%s，队列名为：%s的消息：%s \n",
+                    message.getMessageProperties().getReceivedExchange(),
+                    message.getMessageProperties().getReceivedRoutingKey(),
+                    message.getMessageProperties().getConsumerQueue(),
+                    msg);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+```
+
+##### 3）广播监听器2
+
+创建`FanoutListener2.java`
+
+```java
+public class FanoutListener2 implements MessageListener {
+    public void onMessage(Message message) {
+        try {
+            String msg = new String(message.getBody(), "utf-8");
+
+            System.out.printf("广播监听器2：接收路由名称为：%s，路由键为：%s，队列名为：%s的消息：%s \n",
+                    message.getMessageProperties().getReceivedExchange(),
+                    message.getMessageProperties().getReceivedRoutingKey(),
+                    message.getMessageProperties().getConsumerQueue(),
+                    msg);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+##### 4）星号通配符监听器
+
+创建`TopicListenerStar.java`
+
+```java
+public class TopicListenerStar implements MessageListener {
+    public void onMessage(Message message) {
+        try {
+            String msg = new String(message.getBody(), "utf-8");
+
+            System.out.printf("通配符*监听器：接收路由名称为：%s，路由键为：%s，队列名为：%s的消息：%s \n",
+                    message.getMessageProperties().getReceivedExchange(),
+                    message.getMessageProperties().getReceivedRoutingKey(),
+                    message.getMessageProperties().getConsumerQueue(),
+                    msg);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+```
+
+##### 5）井号通配符监听器
+
+创建`TopicListenerWell.java`
+
+```java
+public class TopicListenerWell implements MessageListener {
+    public void onMessage(Message message) {
+        try {
+            String msg = new String(message.getBody(), "utf-8");
+
+            System.out.printf("通配符#监听器：接收路由名称为：%s，路由键为：%s，队列名为：%s的消息：%s \n",
+                    message.getMessageProperties().getReceivedExchange(),
+                    message.getMessageProperties().getReceivedRoutingKey(),
+                    message.getMessageProperties().getConsumerQueue(),
+                    msg);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+```
+
+##### 6）井号通配符监听器2
+
+创建`TopicListenerWell2.java`
+
+```java
+public class TopicListenerWell2 implements MessageListener {
+    public void onMessage(Message message) {
+        try {
+            String msg = new String(message.getBody(), "utf-8");
+
+            System.out.printf("通配符#监听器2：接收路由名称为：%s，路由键为：%s，队列名为：%s的消息：%s \n",
+                    message.getMessageProperties().getReceivedExchange(),
+                    message.getMessageProperties().getReceivedRoutingKey(),
+                    message.getMessageProperties().getConsumerQueue(),
+                    msg);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+## SpringBoot整合RabbitMQ
+
+### 搭建生产者工程
+
+#### 创建工程
+
+创建生产者工程springboot-rabbitmq-producer
+
+####  添加依赖
+
+修改pom.xml文件：
+
+```xml
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+```
 
 
+
+####  启动类
+
+```java
+package com.itheima.rabbitmq;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ProducerApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ProducerApplication.class);
+    }
+}
+
+```
+
+
+
+####  配置RabbitMQ
+
+##### 1）配置文件
+
+创建application.yml，内容如下：
+
+```yml
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    virtual-host: 
+    username: 
+    password: 
+```
+
+
+
+##### 2）绑定交换机和队列
+
+创建RabbitMQ队列与交换机绑定的配置类com.itheima.rabbitmq.config.RabbitMQConfig
+
+```java
+package com.itheima.rabbitmq.config;
+
+import org.springframework.amqp.core.*;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class RabbitMQConfig {
+    //交换机名称
+    public static final String ITEM_TOPIC_EXCHANGE = "item_topic_exchange";
+    //队列名称
+    public static final String ITEM_QUEUE = "item_queue";
+
+    //声明交换机
+    @Bean("itemTopicExchange")
+    public Exchange topicExchange(){
+        return ExchangeBuilder.topicExchange(ITEM_TOPIC_EXCHANGE).durable(true).build();
+    }
+
+    //声明队列
+    @Bean("itemQueue")
+    public Queue itemQueue(){
+        return QueueBuilder.durable(ITEM_QUEUE).build();
+    }
+
+    //绑定队列和交换机
+    @Bean
+    public Binding itemQueueExchange(@Qualifier("itemQueue") Queue queue,
+                                     @Qualifier("itemTopicExchange") Exchange exchange){
+        return BindingBuilder.bind(queue).to(exchange).with("item.#").noargs();
+    }
+
+}
+```
+
+### 搭建消费者工程
+
+####  创建工程
+
+创建消费者工程springboot-rabbitmq-consumer
+
+#### 添加依赖
+
+修改pom.xml文件内容为如下：
+
+```xml
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+```
+
+####  启动类
+
+```java
+package com.itheima.rabbitmq;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ConsumerApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ConsumerApplication.class);
+    }
+}
+```
+
+
+
+#### 配置RabbitMQ
+
+创建application.yml，内容如下：
+
+```yml
+spring:
+  rabbitmq:
+    host: 
+    port: 5672
+    virtual-host: 
+    username: 
+    password: 
+```
+
+
+
+#### 消息监听处理类
+
+编写消息监听器com.itheima.rabbitmq.listener.MyListener
+
+```java
+package com.itheima.rabbitmq.listener;
+
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.stereotype.Component;
+
+@Component
+public class MyListener {
+
+    /**
+     * 监听某个队列的消息
+     * @param message 接收到的消息
+     */
+    @RabbitListener(queues = "item_queue")
+    public void myListener1(String message){
+        System.out.println("消费者接收到的消息为：" + message);
+    }
+}
+
+```
+
+
+
+### 测试
+
+在生产者工程springboot-rabbitmq-producer中创建测试类，发送消息：
+
+```java
+package com.itheima.rabbitmq;
+
+import com.itheima.rabbitmq.config.RabbitMQConfig;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class RabbitMQTest {
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
+    @Test
+    public void test(){
+        rabbitTemplate.convertAndSend(RabbitMQConfig.ITEM_TOPIC_EXCHANGE, "item.insert", "商品新增，routing key 为item.insert");
+        rabbitTemplate.convertAndSend(RabbitMQConfig.ITEM_TOPIC_EXCHANGE, "item.update", "商品修改，routing key 为item.update");
+        rabbitTemplate.convertAndSend(RabbitMQConfig.ITEM_TOPIC_EXCHANGE, "item.delete", "商品删除，routing key 为item.delete");
+    }
+}
+```
+
+
+
+先运行上述测试程序（交换机和队列才能先被声明和绑定），然后启动消费者；在消费者工程springboot-rabbitmq-consumer中控制台查看是否接收到对应消息。
+
+
+
+另外；也可以在RabbitMQ的管理控制台中查看到交换机与队列的绑定：
+
+![1556074827222](./讲义/assets/1556074827222.png)
 
