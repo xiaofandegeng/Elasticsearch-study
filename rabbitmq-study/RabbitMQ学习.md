@@ -223,5 +223,119 @@ cp rabbitmq.config.example /etc/rabbitmq/rabbitmq.config
 
    ![](./image/1565098719054.png)
 
-   
+## RabbitMQ入门
+
+[请看这里](./讲义/RabbitMQ 讲义.md)
+
+### 简单模式
+
+​	①创建工程（生成者、消费者）
+
+​	②分别添加依赖
+
+​	③编写生产者发送消息
+
+​	④编写消费者接收消息
+
+![简单模式](./image/mq06.png)
+
+[简单模式生产者代码](./rabbitmq-producer/src/main/java/com/itcast/producer/HelloWorld.java)
+
+[简单模式消费者代码](./rabbitmq-consumer/src/main/java/com/itcast/producer/Helloworld.java)
+
+​	在上图模型中，有以下概念：
+
+- P：生产者，也就是要发送消息的程序
+- C：消费者，消息的接收者，会一直等待消息的到来
+- queue：消息队列，图中红色部分。类似一个邮箱，可以缓存消息，生产者从中投递消息，消费者从其中取出消息。
+
+## RabbitMQ工作模式
+
+[工作模式生产者代码](./rabbitmq-producer/src/main/java/com/itcast/producer)
+
+[工作模式消费者代码](./rabbitmq-consumer/src/main/java/com/itcast/consumer)
+
+### work queue工作队列模式
+
+![工作模式](./image/mq07.png)
+
+
+
+- work queues：与上面的简单模式相比，多了一个消费端，多个消费端共同消费同一个队列的信息。
+
+- 应用场景：对于任务过重或任务较多情况使用工作队列可以提高任务处理的速度。
+
+### pub/sub 订阅模式
+
+![订阅模式](./image/mq08.png)
+
+​	在订阅模型中，多了一个Exchange角色，而且过程略有变化：
+
+- P：生产者，也就是要发送消息的程序，但是不再发送到队列中，而是发给X（交换机）
+
+- C：消费者，消息的接收者，会一直等待消息到来
+
+- Queue：消息队列，接收消息，缓存消息
+
+- Exchange：交换机（X）。一方面，接收生产者发送的消息，另一方面，知道如何处理消息。例如递交给某个特别队列，递交给所有队列、或是将消息丢弃。到底如何操作，取决于Exchange的类型。Exchange有常见如下3种类型：
+
+  - Fanout：广播，将消息交给所有绑定到交换机的队列。
+  - Direct：定向，把消息交给符合指定routing key的队列
+  - Topic：通配符，把消息交给符合routing key（路由模式）的队列
+
+  Exchange（交换机）只负责转发消息，不负责存储消息的能力，因此如果没有任何队列和Exchange绑定，或者没有符合路由规则的队列，那么消息会丢失。
+
+### routing 路由模式
+
+- 队列和交换机的绑定，不再是任意绑定了，而是要指定一个RoutingKey（路由key）
+- 消息的发送方在向Exchange发送消息时，也必须指定消息的RoutingKey
+- Exchange不再把消息交给每一个绑定的队列，而是根据消息的Routing key进行判断，只有队列的Routingkey与消息的Routing key完全一致，才会接收到消息
+
+![路由模式](./image/mq09.png)
+
+- P：生产者，向Exchange发送消息，发送消息时，会指定一个routing key
+- X：Exchange（交换机），接收生产者的消息，然后把消息递交给与routing key完全匹配的队列
+- C1：消费者，其所在队列指定了需要routing key为error的消息
+- C2：消费者，其所在队列指定了需要routing key为info、error、warning的消息
+
+### Topics 通配符模式
+
+- Topic类型与Direct相比，都是可以根据RoutingKey把消息路由到不同的队列。只不过Topic类型Exchange可以让队列在绑定Routing key的时候使用通配符！
+- Routingkey一般都是有一个或多个单词组成，多个单词之间以“.”分割，例如：item.insert
+- 通配符规则：#匹配一个或多个词，*匹配不多不少恰好1个词，如何：item.#能够匹配item.insert.abc或者item.insert，item.\*只能匹配item.insert
+
+![通配符模式](./image/mq10.png)
+
+- 红色Queue：绑定的是usa.#，因此凡是以usa.开头的routing key都会被匹配
+- 黄色Queue：绑定的是#.news，因此凡事以.news结尾的routing key都会被匹配
+
+### 工作模式总结
+
+- 简单模式 HelloWorld
+
+  一个生产者，一个消费者，不需要设置交换机（使用默认的交换机）。
+
+- 工作队列模式 Work Queue
+
+  一个生产者，多个消费者（竞争关系），不需要设置交换机（使用默认的交换机）。
+
+- 发布订阅模式 publish/subscribe
+
+  需要设置类型为fanount的交换机，并且交换机和队列进行绑定，当发送消息到交换机后，交换机会将消息发送到绑定的队列
+
+- 路由模式 routing
+
+  需要设置类型为direct的交换机，交换机和队列进行绑定，并且指定routing key，当发送消息到交换机后，交换机会根据routing key将消息发送到对应的队列。
+
+- 通配符模式 Topic
+
+  需要设置类型为topic的交换机，交换机和队列进行绑定，并且指定通配符方式的routing key，当发送消息到交换机后，交换机会根据routing key将消息发送到对应的队列。
+
+## Spring整合RabbitMq
+
+
+
+
+
+
 

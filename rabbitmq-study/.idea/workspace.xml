@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="257c448d-5346-4c0d-936b-58941b650a28" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/讲义/RabbitMQ第一天.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/讲义/RabbitMQ第一天.ppt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ学习.md" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ学习.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/讲义/RabbitMQ 讲义.md" beforeDir="false" afterPath="$PROJECT_DIR$/讲义/RabbitMQ 讲义.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +183,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620270540893</updated>
       <workItem from="1620270541998" duration="6855000" />
-      <workItem from="1620699056715" duration="16054000" />
+      <workItem from="1620699056715" duration="17429000" />
     </task>
     <servers />
   </component>
