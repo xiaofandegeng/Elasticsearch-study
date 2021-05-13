@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="257c448d-5346-4c0d-936b-58941b650a28" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/RabbitMQ学习.md" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ学习.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-rabbitmq-producer/src/test/java/com/itcast/rabbitmq/test/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq-producer/src/test/java/com/itcast/rabbitmq/test/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-consumer/mvnw" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,16 +71,14 @@
       <recent name="com.itcast.rabbitmq.listener" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Test01.testDelay">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Test01.testConfirm">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,6 +110,22 @@
       <option name="PACKAGE_NAME" value="com.itcast.rabbitmq.test" />
       <option name="MAIN_CLASS_NAME" value="com.itcast.rabbitmq.test.Test01" />
       <option name="METHOD_NAME" value="TestSpringQueue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test01.testConfirm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-rabbitmq-producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itcast.rabbitmq.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itcast.rabbitmq.test" />
+      <option name="MAIN_CLASS_NAME" value="com.itcast.rabbitmq.test.Test01" />
+      <option name="METHOD_NAME" value="testConfirm" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,29 +163,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test01.testTtl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-rabbitmq-producer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itcast.rabbitmq.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itcast.rabbitmq.test" />
-      <option name="MAIN_CLASS_NAME" value="com.itcast.rabbitmq.test.Test01" />
-      <option name="METHOD_NAME" value="testTtl" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Test01.testConfirm" />
         <item itemvalue="JUnit.Test01.testDelay" />
         <item itemvalue="JUnit.Test01.TestSpringQueue" />
         <item itemvalue="JUnit.Test01" />
         <item itemvalue="JUnit.Test01.testDlx" />
-        <item itemvalue="JUnit.Test01.testTtl" />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +183,7 @@
       <updated>1620270540893</updated>
       <workItem from="1620270541998" duration="6855000" />
       <workItem from="1620699056715" duration="17780000" />
+      <workItem from="1620869490281" duration="1377000" />
     </task>
     <servers />
   </component>

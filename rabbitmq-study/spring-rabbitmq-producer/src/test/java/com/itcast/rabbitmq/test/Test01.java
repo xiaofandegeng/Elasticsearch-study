@@ -52,6 +52,7 @@ public class Test01 {
     public void testConfirm() {
         rabbitTemplate.setConfirmCallback(new RabbitTemplate.ConfirmCallback() {
             @Override
+            //@NonNull CorrelationData correlationData, boolean ack, @Nullable String cause
             public void confirm(CorrelationData correlationData, boolean b, String s) {
                 System.out.println("confirm方法被执行了......");
                 if (b) {

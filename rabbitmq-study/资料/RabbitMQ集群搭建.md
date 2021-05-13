@@ -211,7 +211,7 @@ web监控：
 
 **设置的镜像队列可以通过开启的网页的管理端Admin->Policies，也可以通过命令。**
 
-> rabbitmqctl set_policy my_ha "^" '{"ha-mode":"all"}'
+> rabbit set_policy my_ha "^" '{"ha-mode":"all"}'
 
 ![1566072300852](pic\1566072300852.png)
 
