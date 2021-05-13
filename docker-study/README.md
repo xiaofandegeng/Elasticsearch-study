@@ -1,6 +1,6 @@
 # docker的学习
 
-## docker简介
+## 1 docker简介
 
 ​	Docker是基于Go语言实现的云开源项目。
 ​	Docker的主要目标是“Build，Ship and Run Any App,Anywhere”，也就是通过对应用组件的封装、分发、部署、运行等生命周期的管理，使用户的APP（可以是一个WEB应用或数据库应用等等）及其运行环境能够做到“一次封装，到处运行”。
@@ -9,14 +9,14 @@
 
 ​	Linux 容器技术的出现就解决了这样一个问题，而 Docker 就是在它的基础上发展过来的。将应用运行在 Docker 容器上面，而 Docker 容器在任何操作系统上都是一致的，这就实现了跨平台、跨服务器。只需要一次配置好环境，换到别的机子上就可以一键部署好，大大简化了操作
 
-### docker下载
+### 1.1 docker下载
 
 - Docker官网 http://www.docker.com
 - Docker Hub官网: https://hub.docker.com/
 
-## docker安装
+## 2 docker安装
 
-### docker的基本组成
+### 2.1 docker的基本组成
 
 - 镜像
 
@@ -43,24 +43,24 @@
   最大的公开仓库是 Docker Hub(https://hub.docker.com/)，
   存放了数量庞大的镜像供用户下载。国内的公开仓库包括阿里云 、网易云 等
 
-### docker安装
+### 2.2 docker安装
 
 ​	本文只针对CentOS7及以上版本安装，其他操作系统请自行百度
 
-	* 确认版本在CentOS7及以上版本 
+* 确认版本在CentOS7及以上版本 
 
 ```linux
 cat /etc/redhat-release
 ```
 
-	* yum安装gcc相关
+* yum安装gcc相关
 
 ```LINUX
 yum -y install gcc
 yum -y install gcc-c++
 ```
 
-	* 卸载旧版本
+* 卸载旧版本
 
 ```
 yum -y remove docker docker-common docker-selinux docker-engine
@@ -111,4 +111,128 @@ vim  /etc/docker/daemon.json
 systemctl daemon-reload
 systemctl restart docker
 ```
+
+### 2.3 镜像加速
+
+​	本文只针对阿里云镜像加速，其余加速方式请自行百度
+
+- 注册一个属于自己的阿里云账户(可复用淘宝账号)
+- 获得加速器地址连接
+  - 登陆阿里云开发者平台 https://promotion.aliyun.com/ntms/act/kubernetes.html
+  - 获取加速器地址 点击容器镜像服务 ---> 镜像工具 ---> 镜像加速器
+- 配置本机Docker运行镜像加速器
+
+```shell
+vim /etc/sysconfig/docker
+   将获得的自己账户下的阿里云加速地址配置进
+other_args="--registry-mirror=https://你自己的账号加速信息.mirror.aliyuncs.com"
+```
+
+- 重新启动Docker后台服务：service docker restart
+
+- Linux 系统下配置完加速器需要检查是否生效
+
+```sh
+ps -ef | grep docker
+//查看配置中的--registry-mirror参数确认配置是否成功
+```
+
+### 2.4 HelloWorld
+
+​	启动docker后台容器，测运行hello-world
+
+```shell
+docker run hello-world
+```
+
+![内部原理](./images/03.png)
+
+​		内部原理：
+
+![内部原理](./images/04.png)
+
+### 2.5 底层原理
+
+- docker是怎么工作的
+
+  ​	Docker是一个**Client-Server**结构的系统，Docker守护进程运行在主机上， 然后通过Socket连接从客户端访问，守护进程从客户端接受命令并管理运行在主机上的容器。 容器，是一个运行时环境，就是我们前面说到的集装箱。
+
+  ![docker底层原理](./images/05.png)
+
+- docker为什么比VM快
+
+  - docker有着比虚拟机更少的抽象层。由于docker不需要Hypervisor实现硬件资源虚拟化,运行在docker容器上的程序直接使用的都是实际物理机的硬件资源。因此在CPU、内存利用率上docker将会在效率上有明显优势。
+
+  - docker利用的是宿主机的内核,而不需要Guest OS。因此,当新建一个容器时,docker不需要和虚拟机一样重新加载一个操作系统内核。仍而避免引寻、加载操作系统内核返个比较费时费资源的过程,当新建一个虚拟机时,虚拟机软件需要加载Guest OS,返个新建过程是分钟级别的。而docker由于直接利用宿主机的操作系统,则省略了返个过程,因此新建一个docker容器只需要几秒钟。
+
+  ![docker底层](./images/06.png)
+
+  ![docker底层](./images/07.png)
+
+## 3 docker常用命令
+
+### 3.1 帮助命令
+
+- `docker version`  查看docker的版本
+- `docker info`  查看docker的信息
+- `docker --help` docker的帮助信息
+
+### 3.2 镜像命令
+
+- `docker images` 列出当前主机上的镜像
+
+![](./images/08.png)
+
+| 列名       | 说明             |
+| ---------- | ---------------- |
+| REPOSITORY | 表示镜像的仓库源 |
+| TAG        | 镜像的标签       |
+| IMAGE ID   | 镜像ID           |
+| CREATED    | 镜像创建时间     |
+| SIZE       | 镜像大小         |
+
+​	同一仓库源可以有多个 TAG，代表这个仓库源的不同个版本，我们使用 REPOSITORY:TAG 来定义不同的镜像。如果你不指定一个镜像的版本标签，例如你只使用 ubuntu，docker 将默认使用 ubuntu:latest 镜像
+
+​	OPTIONS说明：
+
+​		-a :列出本地所有的镜像（含中间映像层）
+
+​		-q :只显示镜像ID。
+
+​		--digests :显示镜像的摘要信息
+
+​		--no-trunc :显示完整的镜像信息
+
+- `docker search 某个XXX镜像名字`  查找xxx镜像
+
+  `docker search [OPTIONS] 镜像名字`
+
+  OPTIONS说明：
+
+  ​	--no-trunc : 显示完整的镜像描述
+
+  ​	-s : 列出收藏数不小于指定值的镜像
+
+  ​	--automated : 只列出 automated build类型的镜像
+
+- `docker pull 某个xxx镜像名字` 下载镜像
+
+  `docker pull 镜像名字[:TAG]`
+
+- `docker rmi 某个XXX镜像名字ID`  删除镜像
+
+  - `docker rmi -f 镜像ID`  删除单个镜像
+  - `docker rmi -f 镜像名1:TAG 镜像名2:TAG`  删除多个镜像
+  - `docker rmi -f $(docker images -qa)`  删除全部镜像
+
+### 3.3 容器命令
+
+​	**有镜像才能创建容器，这是根本前提(下载一个CentOS镜像演示)**
+
+	- docker pull centos
+	- 新建并启动容器  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]  
+
+
+
+
 
