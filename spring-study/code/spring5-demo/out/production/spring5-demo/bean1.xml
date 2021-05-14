@@ -7,8 +7,14 @@
 
     <!--1.创建对象-->
     <!--2.注入属性-->
-    <bean id="book" class="com.atguigu.spring5.Book">
+<!--    <bean id="book" class="com.atguigu.spring5.Book">
         <property name="bname" value="红楼梦"/>
         <property name="bauthor" value="曹雪芹"/>
+    </bean>-->
+
+    <!--有参构造注入属性-->
+    <bean id="order" class="com.atguigu.spring5.Order">
+        <constructor-arg name="oname" value="暗夜精灵5"/>
+        <constructor-arg name="oaddress" value="成都市"/>
     </bean>
 </beans>
