@@ -21,3 +21,7 @@ P
  spring-rabbitmq-consumer/pom.xml,f\4\f4ec6d9eb547b21ba94c5678ebce66bd231e9490
 {
 Kspring-rabbitmq-producer/src/test/java/com/itcast/rabbitmq/test/Test01.java,4\c\4cf6da1533b108c3044b798f52fcc240fa8974c0
+†
+Vspring-rabbitmq-consumer/src/main/java/com/itcast/rabbitmq/listener/DelayListener.java,6\7\67988c528bc378b8760d4af28b65828301126ce0
+~
+Nspringboot-producer/src/main/java/com/itcast/rabbitmq/ProducerApplication.java,8\f\8fac0bb77e67cedaa02d7385f3019e482ad14039

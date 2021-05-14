@@ -229,8 +229,68 @@ docker run hello-world
 
 ​	**有镜像才能创建容器，这是根本前提(下载一个CentOS镜像演示)**
 
-	- docker pull centos
-	- 新建并启动容器  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]  
+ -  docker pull centos
+
+ -  `docker run [OPTIONS] IMAGE [COMMAND] [ARG...]`  新建并启动容器
+
+    OPTIONS说明：
+
+    ​	--name="容器新名字": 为容器指定一个名称；
+    ​    -d: 后台运行容器，并返回容器ID，也即启动守护式容器；
+    ​	-i：以交互模式运行容器，通常与 -t 同时使用；
+    ​	-t：为容器重新分配一个伪输入终端，通常与 -i 同时使用；
+    ​	-P: 随机端口映射；
+    ​	-p: 指定端口映射，有以下四种格式
+    ​      	ip:hostPort:containerPort
+    ​      	ip::containerPort
+    ​      	hostPort:containerPort
+    ​      	containerPort
+
+- `docker ps [OPTIONS]`列出当前所有正在运行的容器
+
+  OPTIONS说明：
+
+  ​	-a :列出当前所有正在运行的容器+历史上运行过的
+  ​	-l :显示最近创建的容器。
+  ​	-n：显示最近n个创建的容器。
+  ​	-q :静默模式，只显示容器编号。
+  ​	--no-trunc :不截断输出。
+
+- 退出容器
+
+  - `exit`  容器停止退出
+  - `ctrl + P + Q`  容器不停止退出
+
+- `docker start 容器id或者容器名`  启动容器
+
+- `docker restart 容器id或者容器名`  重启容器
+
+- `docker stop 容器id或者容器名`  停止容器
+
+- `docker kill 容器id或者容器名`  强制停止容器
+
+- `docker rm 容器id`  删除已停止的容器
+
+  - `docker rm -f $(docker ps -a -q)`
+
+- `docker run -d 容器名`  启动守护式线程
+
+- `docker logs -f -t --tail 容器id`  查看容器日志
+
+- `docker top 容器id`  查看容器内运行的进程
+
+- 进入正在运行的容器并以命令行交互
+
+  - `docker exec -it 容器id bashshell`  在容器中打开新的终端，并且可以启动新线程
+  - `docker attach 容器id`  直接进入容器启动命令的终端，不会启动新线程
+
+- `docker cp 容器id:容器内路径 目的主机路径`
+
+### 3.4 小结
+
+![docker命令小结](./images/09.png)
+
+
 
 
 
