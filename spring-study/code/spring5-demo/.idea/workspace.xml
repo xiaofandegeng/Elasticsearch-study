@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5ad5ba5-caa4-4c84-ae2f-f2b55a898585" name="Default Changelist" comment="" />
+    <list default="true" id="b5ad5ba5-caa4-4c84-ae2f-f2b55a898585" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/spring5-demo/bean1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring5-demo/bean1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring5-demo/com/atguigu/spring5/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring5-demo/com/atguigu/spring5/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/spring5/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/Book.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +106,7 @@
       <recent name="C:\Users\SHL\Desktop\study\spring-study\code\spring5-demo\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoTest01.testOrder">
+  <component name="RunManager" selected="JUnit.DemoTest01.testBook">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.Main" />
       <module name="spring5-demo" />
@@ -179,8 +184,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DemoTest01.testOrder" />
         <item itemvalue="JUnit.DemoTest01.testBook" />
+        <item itemvalue="JUnit.DemoTest01.testOrder" />
         <item itemvalue="JUnit.DemoTest01.testAdd" />
       </list>
     </recent_temporary>
@@ -193,7 +198,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620975885710</updated>
-      <workItem from="1620975886863" duration="6191000" />
+      <workItem from="1620975886863" duration="7254000" />
     </task>
     <servers />
   </component>
