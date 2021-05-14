@@ -3,5 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="com.atguigu.spring5.User"></bean>
+    <!--<bean id="user" class="com.atguigu.spring5.User"></bean>-->
+
+    <!--1.创建对象-->
+    <!--2.注入属性-->
+    <bean id="book" class="com.atguigu.spring5.Book">
+        <property name="bname" value="红楼梦"/>
+        <property name="bauthor" value="曹雪芹"/>
+    </bean>
 </beans>
