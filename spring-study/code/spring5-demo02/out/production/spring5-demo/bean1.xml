@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean id="user" class="com.atguigu.spring5.User"></bean>-->
+
+    <!--1.创建对象-->
+    <!--2.注入属性-->
+    <bean id="book" class="com.atguigu.spring5.Book">
+        <property name="bname" value="红楼梦"/>
+        <property name="bauthor" value="曹雪芹"/>
+        <property name="address">
+            <value><![CDATA[<<南京>>]]></value>
+        </property>
+    </bean>
+
+    <!--有参构造注入属性-->
+<!--    <bean id="order" class="com.atguigu.spring5.Order">
+        <constructor-arg name="oname" value="暗夜精灵5"/>
+        <constructor-arg name="oaddress" value="成都市"/>
+    </bean>-->
+</beans>

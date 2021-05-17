@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--1.创建对象-->
+    <!--2.注入属性-->
+
+    <util:list id="bookList">
+        <value>九阳神功</value>
+        <value>降龙十八掌</value>
+    </util:list>
+
+    <bean id="book" class="com.atguigu.spring5.collectionType.Book">
+        <property name="list" ref="bookList"></property>
+    </bean>
+
+</beans>
