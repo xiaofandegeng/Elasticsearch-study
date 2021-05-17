@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5ad5ba5-caa4-4c84-ae2f-f2b55a898585" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/spring5-demo/bean1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring5-demo/bean1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/spring5-demo/com/atguigu/spring5/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring5-demo/com/atguigu/spring5/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/spring5/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/spring5-demo/bean2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/spring5-demo/com/atguigu/spring5/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/spring5-demo/com/atguigu/spring5/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/spring5-demo/com/atguigu/spring5/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/spring5-demo/com/atguigu/spring5/test/DemoTest02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bean2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bean3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bean4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/bean/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/bean/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/test/DemoTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/test/DemoTest03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/test/DemoTest04.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -91,7 +104,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/spring-expression-5.2.6.RELEASE.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -99,24 +112,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SHL\Desktop\study\spring-study\code\spring5-demo\src" />
       <recent name="C:\Users\SHL\Desktop\study\spring-study\code\spring5-demo\src\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SHL\Desktop\study\spring-study\code\spring5-demo" />
       <recent name="C:\Users\SHL\Desktop\study\spring-study\code\spring5-demo\src" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.spring5.test" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoTest01.testBook">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.Main" />
-      <module name="spring5-demo" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DemoTest04.testAdd">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -124,22 +131,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoTest01.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring5-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.spring5.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.spring5.test" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring5.test.DemoTest01" />
-      <option name="METHOD_NAME" value="testAdd" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,17 +167,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoTest02.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring5-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.spring5.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.spring5.test" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring5.test.DemoTest02" />
+      <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoTest03.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring5-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.spring5.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.spring5.test" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring5.test.DemoTest03" />
+      <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoTest04.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring5-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.spring5.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.spring5.test" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring5.test.DemoTest04" />
+      <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.DemoTest01.testAdd" />
       <item itemvalue="JUnit.DemoTest01.testBook" />
       <item itemvalue="JUnit.DemoTest01.testOrder" />
+      <item itemvalue="JUnit.DemoTest02.testAdd" />
+      <item itemvalue="JUnit.DemoTest03.testAdd" />
+      <item itemvalue="JUnit.DemoTest04.testAdd" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoTest04.testAdd" />
+        <item itemvalue="JUnit.DemoTest03.testAdd" />
+        <item itemvalue="JUnit.DemoTest02.testAdd" />
         <item itemvalue="JUnit.DemoTest01.testBook" />
         <item itemvalue="JUnit.DemoTest01.testOrder" />
-        <item itemvalue="JUnit.DemoTest01.testAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +240,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620975885710</updated>
-      <workItem from="1620975886863" duration="7254000" />
+      <workItem from="1620975886863" duration="10457000" />
     </task>
     <servers />
   </component>
