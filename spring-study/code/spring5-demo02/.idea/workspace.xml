@@ -1,54 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5ad5ba5-caa4-4c84-ae2f-f2b55a898585" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bean2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/collectionType/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/collectionType/Stu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/test/Demotest01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/bean1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/bean2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/bean3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/bean4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/com/atguigu/spring5/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/com/atguigu/spring5/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/com/atguigu/spring5/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/com/atguigu/spring5/bean/Dept.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/com/atguigu/spring5/bean/Emp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/com/atguigu/spring5/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/com/atguigu/spring5/dao/impl/UserDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/com/atguigu/spring5/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/com/atguigu/spring5/test/DemoTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/com/atguigu/spring5/test/DemoTest02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/com/atguigu/spring5/test/DemoTest03.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/com/atguigu/spring5/test/DemoTest04.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/lib/commons-logging-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/lib/spring-beans-5.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/lib/spring-context-5.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/lib/spring-core-5.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/out/production/spring5-demo/lib/spring-expression-5.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/bean1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/bean2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/bean3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/bean4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/com/atguigu/spring5/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/com/atguigu/spring5/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/com/atguigu/spring5/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/com/atguigu/spring5/bean/Dept.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/com/atguigu/spring5/bean/Emp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/com/atguigu/spring5/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/collectionType/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/com/atguigu/spring5/dao/impl/UserDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/com/atguigu/spring5/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/com/atguigu/spring5/test/DemoTest01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/com/atguigu/spring5/test/DemoTest02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/com/atguigu/spring5/test/DemoTest03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/com/atguigu/spring5/test/DemoTest04.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/lib/commons-logging-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/lib/spring-beans-5.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/lib/spring-context-5.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/lib/spring-core-5.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring5-demo/src/lib/spring-expression-5.2.6.RELEASE.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="b5ad5ba5-caa4-4c84-ae2f-f2b55a898585" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -326,7 +279,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620975885710</updated>
       <workItem from="1620975886863" duration="11313000" />
-      <workItem from="1621221374139" duration="4526000" />
+      <workItem from="1621221374139" duration="5812000" />
     </task>
     <servers />
   </component>
