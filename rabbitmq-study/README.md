@@ -4,9 +4,9 @@
 
 ​	1. MQ全称 **Message Queue（消息队列）**，是在消息的传输过程中保存消息的容器。多用于分布式系统之间进行通信。
 
-![mq概念](./image/mq01.png)
+![mq概念](./image/mq01.PNG)
 
-![mq中间件](./image/mq02.png)
+![mq中间件](./image/mq02.PNG)
 
 ​	2. MQ概述小结：
 
@@ -237,7 +237,7 @@ cp rabbitmq.config.example /etc/rabbitmq/rabbitmq.config
 
 ​	④编写消费者接收消息
 
-![简单模式](./image/mq06.png)
+![简单模式](./image/mq06.PNG)
 
 [简单模式生产者代码](./rabbitmq-producer/src/main/java/com/itcast/producer/HelloWorld.java)
 
@@ -257,7 +257,7 @@ cp rabbitmq.config.example /etc/rabbitmq/rabbitmq.config
 
 ### 4.1 work queue工作队列模式
 
-![工作模式](./image/mq07.png)
+![工作模式](./image/mq07.PNG)
 
 
 
@@ -267,7 +267,7 @@ cp rabbitmq.config.example /etc/rabbitmq/rabbitmq.config
 
 ### 4.2 pub/sub 订阅模式
 
-![订阅模式](./image/mq08.png)
+![订阅模式](./image/mq08.PNG)
 
 ​	在订阅模型中，多了一个Exchange角色，而且过程略有变化：
 
@@ -291,7 +291,7 @@ cp rabbitmq.config.example /etc/rabbitmq/rabbitmq.config
 - 消息的发送方在向Exchange发送消息时，也必须指定消息的RoutingKey
 - Exchange不再把消息交给每一个绑定的队列，而是根据消息的Routing key进行判断，只有队列的Routingkey与消息的Routing key完全一致，才会接收到消息
 
-![路由模式](./image/mq09.png)
+![路由模式](./image/mq09.PNG)
 
 - P：生产者，向Exchange发送消息，发送消息时，会指定一个routing key
 - X：Exchange（交换机），接收生产者的消息，然后把消息递交给与routing key完全匹配的队列
@@ -304,7 +304,7 @@ cp rabbitmq.config.example /etc/rabbitmq/rabbitmq.config
 - Routingkey一般都是有一个或多个单词组成，多个单词之间以“.”分割，例如：item.insert
 - 通配符规则：#匹配一个或多个词，*匹配不多不少恰好1个词，如何：item.#能够匹配item.insert.abc或者item.insert，item.\*只能匹配item.insert
 
-![通配符模式](./image/mq10.png)
+![通配符模式](./image/mq10.PNG)
 
 - 红色Queue：绑定的是usa.#，因此凡是以usa.开头的routing key都会被匹配
 - 黄色Queue：绑定的是#.news，因此凡事以.news结尾的routing key都会被匹配
@@ -995,7 +995,7 @@ public class RabbitMQTest {
 
 ### 7.3 削峰填流
 
-![消费端限流](./image/mq11.png)
+![消费端限流](./image/mq11.PNG)
 
 #### 7.3.1 消费端限流小结
 
@@ -1008,7 +1008,7 @@ public class RabbitMQTest {
 - 当消息到达存活时间后，还没有被消费，会被自动清除
 - RabbitMQ可以对消息设置过期时间，也可以对整个队列(queue)设置过期时间
 
-![TTL](./image/mq12.png)
+![TTL](./image/mq12.PNG)
 
 ####  7.4.1 TTL小结
 
@@ -1020,7 +1020,7 @@ public class RabbitMQTest {
 
 ​	死信队列，英文缩写：DLX。Dead Letter Exchange(死信交换机)，当消息成为Dead message后，可以被重新发送到另一个交换机，这个交换机就是DLX。
 
-![死信队列](./image/mq13.png)
+![死信队列](./image/mq13.PNG)
 
 ​	消息成为死信队列的三种情况：
 
@@ -1032,7 +1032,7 @@ public class RabbitMQTest {
 
 ​		给队列设置参数：**x-dead-letter-exchange**和**x-dead-letter-routing-key**
 
-![死信队列](./image/mq14.png)
+![死信队列](./image/mq14.PNG)
 
 #### 7.5.1 死信队列小结
 
@@ -1057,11 +1057,11 @@ public class RabbitMQTest {
 	- 定时器
 	- 延迟队列
 
-![延迟队列](./image/mq15.png)
+![延迟队列](./image/mq15.PNG)
 
 ​	在rabbitMQ中并未提供延迟队列功能，但可以使用：**TTL + 死信队列** 组合实现延迟队列的效果
 
-![ttl+死信队列](./image/mq16.png)
+![ttl+死信队列](./image/mq16.PNG)
 
 #### 7.6.1 延迟队列小结
 
@@ -1164,7 +1164,7 @@ public class RabbitMQTest {
 
   需求：100%确保消息发送成功
 
-  ![消息可靠性保障](./image/mq17.png)
+  ![消息可靠性保障](./image/mq17.PNG)
 
 ### 8.2 消息幂等性保障
 
@@ -1174,7 +1174,7 @@ public class RabbitMQTest {
 
   ​	在MQ中指，消费多条相同的消息，得到与消费该消息一次相同的结果。
 
-  ![消息幂等性保障](./image/mq18.png)
+  ![消息幂等性保障](./image/mq18.PNG)
 
   
 
