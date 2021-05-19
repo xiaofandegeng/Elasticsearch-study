@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/sparearray/SpareArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/queue/QueueArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/queue/QueueArrayTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -42,7 +44,20 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.QueueArrayTest">
+    <configuration name="QueueArrayTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.queue.QueueArrayTest" />
+      <module name="suanfa-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpareArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.sparearray.SpareArray" />
       <module name="suanfa-study" />
@@ -58,6 +73,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QueueArrayTest" />
         <item itemvalue="Application.SpareArray" />
       </list>
     </recent_temporary>
@@ -72,7 +88,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621339494502</updated>
-      <workItem from="1621339497289" duration="4488000" />
+      <workItem from="1621339497289" duration="5245000" />
+      <workItem from="1621429876927" duration="5150000" />
     </task>
     <servers />
   </component>
@@ -80,26 +97,30 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="253" key="GridCell.Tab.0.bottom" timestamp="1621345531478">
+    <state width="1493" height="379" key="GridCell.Tab.0.bottom" timestamp="1621435399002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621345531478" />
-    <state width="1493" height="253" key="GridCell.Tab.0.center" timestamp="1621345531478">
+    <state width="1493" height="379" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621435399002" />
+    <state width="1493" height="379" key="GridCell.Tab.0.center" timestamp="1621435399002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621345531478" />
-    <state width="1493" height="253" key="GridCell.Tab.0.left" timestamp="1621345531478">
+    <state width="1493" height="379" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621435399002" />
+    <state width="1493" height="379" key="GridCell.Tab.0.left" timestamp="1621435399001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621345531478" />
-    <state width="1493" height="253" key="GridCell.Tab.0.right" timestamp="1621345531478">
+    <state width="1493" height="379" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621435399001" />
+    <state width="1493" height="379" key="GridCell.Tab.0.right" timestamp="1621435399002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621345531478" />
+    <state width="1493" height="379" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621435399002" />
     <state x="497" y="118" width="784" height="596" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1621345209922">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="497" y="118" width="784" height="596" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1621345209922" />
+    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621432263837">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1621432263837" />
     <state x="713" y="179" key="extract.method.dialog" timestamp="1621344946458">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
