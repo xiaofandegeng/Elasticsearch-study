@@ -1,67 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a84d3b8c-f931-43b6-b6c5-88f9939666b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_spring_aop_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_spring_beans_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_spring_context_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_spring_core_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_spring_expression_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_spring_test_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_springframework_spring_tx_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/smartfox_info.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/springboot-producer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/springboot-producer/springboot-producer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/springboot-producer/src/main/java/com/itcast/rabbitmq/ProducerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/springboot-producer/src/main/java/com/itcast/rabbitmq/config/RabbitmqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/springboot-producer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-study/springboot-producer/src/test/java/com/itcast/rabbitmq/test/ProducerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-study/rabbitmq/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-study/spring-rabbitmq-consumer/spring-rabbitmq-consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-study/spring-rabbitmq-consumer/spring-rabbitmq-consumer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-study/spring-rabbitmq-consumer/src/test/java/com/itcast/test/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-study/spring-rabbitmq-consumer/src/test/java/com/itcast/rabbitmq/test/Test01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-study/spring-rabbitmq-producer/spring-rabbitmq-producer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-study/spring-rabbitmq-producer/spring-rabbitmq-producer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-study/spring-rabbitmq-producer/src/test/java/com/itcast/test/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-study/spring-rabbitmq-producer/src/test/java/com/itcast/rabbitmq/test/Test01.java" afterDir="false" />
-    </list>
+    <list default="true" id="a84d3b8c-f931-43b6-b6c5-88f9939666b9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +20,43 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/rabbitmq-study" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.21223022" />
+  </component>
+  <component name="RunManager">
+    <configuration name="SpareArray" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sparearray.SpareArray" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.sparearray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpareArray" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620270517471</updated>
       <workItem from="1620270518704" duration="22000" />
+      <workItem from="1621481340786" duration="754000" />
     </task>
     <servers />
   </component>

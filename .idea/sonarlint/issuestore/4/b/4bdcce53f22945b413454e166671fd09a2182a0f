@@ -1,0 +1,8 @@
+
+c	java:S100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„›‘
+O
+java:S47198"9Replace charset name argument with StandardCharsets.UTF_8(Õ¸É´
+\	java:S8996"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ
+i
+java:S40424"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ
+U	java:S8994";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ
