@@ -1,6 +1,6 @@
-# 数据结构与算法
-
 [TOC]
+
+# 数据结构与算法
 
 ## 一. 稀疏数组
 
@@ -57,7 +57,7 @@
 
 ### 4. 代码实现
 
-[点击这里]()
+[点击这里](./src/com/atguigu/sparearray/SpareArray.java)
 
 ## 二. 环形队列
 
@@ -75,7 +75,7 @@
 
 ### 4. 代码实现
 
-[点击这里]()
+[点击这里](./src/com/atguigu/queue/QueueArray.java)
 
 
 
