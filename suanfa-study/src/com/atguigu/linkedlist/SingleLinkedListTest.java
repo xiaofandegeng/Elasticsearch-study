@@ -25,5 +25,21 @@ public class SingleLinkedListTest {
         //  显示链表
         list.show();
 
+        list.update(new HeroNode(4, "西门庆", "大官人"));
+
+        System.out.println("~~~~~~更新数据后，显示链表~~~~~~");
+        list.show();
+
+        System.out.println("~~~~~~删除数据后，显示链表~~~~~~");
+        //删除第三个节点
+        list.del(4);
+        list.del(3);
+//        list.del(1);
+        list.del(2);
+
+        list.show();
+        System.out.println("~~~~~~删除数据后，显示链表~~~~~~");
+        list.show();
+
     }
 }

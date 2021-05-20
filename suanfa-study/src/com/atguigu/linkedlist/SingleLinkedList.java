@@ -53,6 +53,73 @@ public class SingleLinkedList {
         }
     }
 
+    //更新英雄节点数据
+    public void update(HeroNode newHeroNode){
+        //如果链表为空直接返回
+        if(headNode.next == null){
+            System.out.println("~~~~~~当前链表为空~~~~~~");
+            return;
+        }
+        //定义一个指针
+        HeroNode temp = headNode.next;
+        //定义一个条件，判断是否找到该节点，默认该节点不存在
+        Boolean flag = false;
+        //循环链表找该节点是否存在
+        while (true){
+            //判断是否找到了链表末尾
+            if(temp == null){
+                break;
+            }
+            // 找到了该节点的编号
+            if(temp.no == newHeroNode.no){
+                flag = true;
+                break;
+            }
+            //后移指针节点
+            temp = temp.next;
+        }
+        //如果找到该节点，更新数据
+        if(flag){
+            temp.name = newHeroNode.name;
+            temp.nickname = newHeroNode.nickname;
+        }else {
+            System.out.printf("修改英雄节点编号：%d 不存在，无法修改\n", newHeroNode.no);
+        }
+    }
+
+    //删除某一个节点
+    public void del(int  no){
+        //如果链表为空不能删除
+        if(headNode.next == null) {
+            System.out.println("~~~~~~当前链表为空，不能删除节点~~~~~~");
+            return;
+        }
+        //定义一个节点，该节点为删除节点的前一个节点
+        HeroNode temp = headNode;
+        //定义一个判断条件，找到删除节点是否存在，默认不存在
+        boolean flag = false;
+        //循环链表找这个节点
+        while (true){
+            //找到链表末尾还是没有找到这个节点，说明这个节点不存在，跳出循环
+            if(temp.next == null){
+                break;
+            }
+            //如果当前节点的no等于删除节点no，说明找到了这个节点
+            if(temp.next.no == no){
+                flag = true;
+                break;
+            }
+            //后移这个节点
+            temp = temp.next;
+        }
+        //判断这个节点是否存在,存在则删除这个节点
+        if(flag){
+            temp.next = temp.next.next;
+        } else {
+            System.out.printf("~~~~~~删除节点的编号为：%d，不存在该节点\n", no);
+        }
+    }
+
     // 显示整个链表
     public void show() {
         // 定义一个指针
