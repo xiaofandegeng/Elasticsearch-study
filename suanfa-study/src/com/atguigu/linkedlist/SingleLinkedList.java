@@ -1,9 +1,17 @@
 package com.atguigu.linkedlist;
 
+import javax.print.DocFlavor;
+import javax.sound.midi.Soundbank;
+
 /**
  * 定义一个类 管理英雄节点
  */
 public class SingleLinkedList {
+
+    public HeroNode getHeadNode() {
+        return headNode;
+    }
+
     // 初始化一个头节点
     HeroNode headNode = new HeroNode(0, "", "");
 
@@ -140,4 +148,67 @@ public class SingleLinkedList {
             temp = temp.next;
         }
     }
+
+    //  1.求单链表中有效节点的个数
+    public Integer getLength() {
+        int count = 0;
+        HeroNode temp = headNode;
+        if(temp.next == null){
+            System.out.println("~~~~~~当前链表为空~~~~~~");
+            return count;
+        }
+        // 循环这个链表，打印数据
+        while (true){
+            //如果节点下一个没有下一个节点，跳出循环
+            if(temp.next == null){
+                break;
+            }
+            //当前链表的个数+1
+            count++;
+            //  移动指针到下一位
+            temp = temp.next;
+        }
+        return count;
+    }
+
+    //  2.查找单链表中的倒数第k个结点 【新浪面试题】
+    public HeroNode getDescNum(int descNum) {
+        Integer count = getLength();
+        if(count == 0 || count < descNum || descNum <= 0){
+            System.out.println("当前链表个数为空或者小于你查询数量的个数！");
+            return null;
+        }
+
+        int index = count - descNum;
+        HeroNode cur = headNode.next;
+        //  定义一个判断条件表示找到这个节点的位置了
+        for (int i = 0; i < index; i++) {
+            cur = cur.next;
+        }
+        return cur;
+    }
+
+    //  3.单链表的反转【腾讯面试题，有点难度】
+    public void reverseNode(HeroNode headNode) {
+        //  如果当前单链表为空 或则 只有一个节点 不用反转
+        if(headNode.next == null || headNode.next.next ==null){
+            System.out.println("当前链表为空或则链表个数为1，不用反转");
+            return;
+        }
+        //
+        HeroNode cur = headNode.next;
+        HeroNode next = null;
+        HeroNode tmp = new HeroNode(0, null, null);
+        while (cur != null){
+            //  将下一个节点暂时保存起来
+            next = cur.next;
+            cur.next = tmp.next;
+            tmp.next = cur;
+            //  移动当前节点
+            cur = next;
+        }
+        //头节点指向最后一个节点
+        headNode.next = tmp.next;
+    }
+
 }
