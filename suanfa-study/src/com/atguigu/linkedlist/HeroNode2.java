@@ -18,8 +18,8 @@ public class HeroNode2 {
         this.name = name;
         this.nickname = nickname;
     }
-    //为了显示方便，重写tostring
 
+    //为了显示方便，重写tostring
     @Override
     public String toString() {
         return "HeroNode{" +
