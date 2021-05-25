@@ -2,6 +2,7 @@ package com.atguigu.linkedlist;
 
 import javax.print.DocFlavor;
 import javax.sound.midi.Soundbank;
+import java.util.Stack;
 
 /**
  * 定义一个类 管理英雄节点
@@ -209,6 +210,30 @@ public class SingleLinkedList {
         }
         //头节点指向最后一个节点
         headNode.next = tmp.next;
+    }
+
+    //  4.从尾到头打印单链表 【百度，要求方式1：反向遍历 。 方式2：Stack栈】
+    public void reversePrintNode(HeroNode headNode){
+        // 判断当前链表是否为空
+        if(headNode.next == null) {
+            System.out.println("当前链表为空，无法从尾到头打印数据！");
+            return;
+        }
+        //  记录当前节点
+        HeroNode cur = headNode.next;
+        Stack<HeroNode> stack = new Stack<>();
+        //  循环链表
+        while (cur != null) {
+            stack.push(cur);
+            cur = cur.next;
+        }
+        System.out.println("stack的大小为：" + stack.size());
+        while (stack.size() > 0) {
+            System.out.println(stack.pop());
+        }
+
+
+
     }
 
 }
