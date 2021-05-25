@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a84d3b8c-f931-43b6-b6c5-88f9939666b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/suanfa-study/src/com/atguigu/linkedlist/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/suanfa-study/src/com/atguigu/linkedlist/SingleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/suanfa-study/src/com/atguigu/linkedlist/SingleLinkedListDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/suanfa-study/src/com/atguigu/linkedlist/SingleLinkedListDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/suanfa-study/image/单链表.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/suanfa-study/src/com/atguigu/linkedlist/DoubleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/suanfa-study/src/com/atguigu/linkedlist/HeroNode2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/suanfa-study/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,19 +19,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1s92WfmIZYbSqiiWSr7ogabh7h3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21223022" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.linkedlist" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.SingleLinkedListDemo">
     <configuration name="SingleLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -110,11 +122,14 @@
       <workItem from="1620270518704" duration="22000" />
       <workItem from="1621481340786" duration="754000" />
       <workItem from="1621558702056" duration="1616000" />
-      <workItem from="1621940883039" duration="836000" />
+      <workItem from="1621940883039" duration="3201000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
