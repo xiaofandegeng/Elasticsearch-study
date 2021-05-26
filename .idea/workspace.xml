@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a84d3b8c-f931-43b6-b6c5-88f9939666b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/suanfa-study/image/单链表.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/suanfa-study/src/com/atguigu/linkedlist/DoubleLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/suanfa-study/src/com/atguigu/linkedlist/HeroNode2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/suanfa-study/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/suanfa-study/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/src/com/atguigu/linkedlist/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/suanfa-study/src/com/atguigu/linkedlist/SingleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/src/com/atguigu/linkedlist/SingleLinkedListDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/suanfa-study/src/com/atguigu/linkedlist/SingleLinkedListDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +120,7 @@
       <workItem from="1620270518704" duration="22000" />
       <workItem from="1621481340786" duration="754000" />
       <workItem from="1621558702056" duration="1616000" />
-      <workItem from="1621940883039" duration="3201000" />
+      <workItem from="1621940883039" duration="5702000" />
     </task>
     <servers />
   </component>

@@ -187,26 +187,33 @@ public class SingleLinkedList {
         return cur;
     }
 
-    //  3.单链表的反转【腾讯面试题，有点难度】
+    /**
+     * 3.单链表的反转【腾讯面试题，有点难度】
+     *
+     * @param headNode 头节点
+     */
     public void reverseNode(HeroNode headNode) {
-        //  如果当前单链表为空 或则 只有一个节点 不用反转
-        if (headNode.next == null || headNode.next.next == null) {
-            System.out.println("当前链表为空或则链表个数为1，不用反转");
+        //  如果当前链表为空或者只要一个节点，不用反转
+        if(headNode.next == null || headNode.next.next == null) {
+            System.out.println("当前链表为空或者只要一个节点，不用反转");
             return;
         }
-        //
+        //  当前节点
         HeroNode cur = headNode.next;
+
+        //  定义一个虚节点
+        HeroNode tmp = new HeroNode(0, "", "");
         HeroNode next = null;
-        HeroNode tmp = new HeroNode(0, null, null);
+        //  循环，反转这个链表
         while (cur != null) {
-            //  将下一个节点暂时保存起来
+            //  先保存当前节点的下一个节点
             next = cur.next;
             cur.next = tmp.next;
             tmp.next = cur;
-            //  移动当前节点
+            //  当前接待你后移
             cur = next;
         }
-        //头节点指向最后一个节点
+        //  将头节点指向第一个节点
         headNode.next = tmp.next;
     }
 

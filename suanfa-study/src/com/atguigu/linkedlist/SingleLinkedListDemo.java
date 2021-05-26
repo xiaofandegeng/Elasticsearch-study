@@ -40,9 +40,11 @@ public class SingleLinkedListDemo {
         System.out.println("~~~~~~当前链表反转~~~~~~");
         list.show();
 
+/*
         //  从头到尾打印链表
         System.out.println("~~~~~~从尾到头打印链表~~~~~~");
         list.reversePrintNode(list.getHeadNode());
+*/
 
     }
 }
