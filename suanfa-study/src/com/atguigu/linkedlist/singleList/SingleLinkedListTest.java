@@ -1,4 +1,7 @@
-package com.atguigu.linkedlist;
+package com.atguigu.linkedlist.singleList;
+
+import com.atguigu.linkedlist.singleList.HeroNode;
+import com.atguigu.linkedlist.singleList.SingleLinkedList;
 
 public class SingleLinkedListTest {
     public static void main(String[] args) {

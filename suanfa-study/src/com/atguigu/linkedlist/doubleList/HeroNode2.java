@@ -1,4 +1,4 @@
-package com.atguigu.linkedlist;
+package com.atguigu.linkedlist.doubleList;
 
 /**
  * 双向链表英雄节点 存储英雄排序、名字、别名、后一个英雄节点

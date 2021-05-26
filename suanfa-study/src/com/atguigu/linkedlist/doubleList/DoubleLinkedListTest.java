@@ -1,4 +1,4 @@
-package com.atguigu.linkedlist;
+package com.atguigu.linkedlist.doubleList;
 
 /**
  * @Description 双向链表测试类
