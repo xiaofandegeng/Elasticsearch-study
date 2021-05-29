@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/linkedlist/circle/Boy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/linkedlist/circle/CircleLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/linkedlist/circle/CircleLinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/linkedlist/DoubleLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/linkedlist/DoubleLinkedListTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/linkedlist/HeroNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/linkedlist/HeroNode2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/linkedlist/SingleLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/linkedlist/SingleLinkedListDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/linkedlist/SingleLinkedListTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/linkedlist/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/linkedlist/doubleList/DoubleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/linkedlist/DoubleLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/linkedlist/doubleList/DoubleLinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/linkedlist/HeroNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/linkedlist/singleList/HeroNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/linkedlist/HeroNode2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/linkedlist/doubleList/HeroNode2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/linkedlist/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/linkedlist/singleList/SingleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/linkedlist/SingleLinkedListDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/linkedlist/singleList/SingleLinkedListDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/linkedlist/SingleLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/linkedlist/singleList/SingleLinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/stack/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/stack/ArrayStackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/stack/Calculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +45,20 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
-  <component name="RunManager" selected="Application.CircleLinkedListTest">
+  <component name="RunManager" selected="Application.ArrayStackTest">
+    <configuration name="ArrayStackTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.stack.ArrayStackTest" />
+      <module name="suanfa-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CircleLinkedListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.linkedlist.circle.CircleLinkedListTest" />
       <module name="suanfa-study" />
@@ -79,19 +78,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.atguigu.linkedlist.singleList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QueueArrayTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.queue.QueueArrayTest" />
-      <module name="suanfa-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayStackTest" />
         <item itemvalue="Application.CircleLinkedListTest" />
         <item itemvalue="Application.DoubleLinkedListTest" />
         <item itemvalue="Application.SingleLinkedListDemo" />
         <item itemvalue="Application.SingleLinkedListTest" />
-        <item itemvalue="Application.QueueArrayTest" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +140,8 @@
       <workItem from="1621604548468" duration="65000" />
       <workItem from="1621763495609" duration="599000" />
       <workItem from="1621864151674" duration="6584000" />
-      <workItem from="1621949814609" duration="11362000" />
+      <workItem from="1621949814609" duration="15442000" />
+      <workItem from="1622113684824" duration="3344000" />
     </task>
     <servers />
   </component>
@@ -162,26 +149,26 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1622032492217">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1622038346883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1622032492217" />
-    <state width="1493" height="253" key="GridCell.Tab.0.bottom" timestamp="1622036961832">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1622038346883" />
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom" timestamp="1622040503418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622036961832" />
-    <state width="1493" height="253" key="GridCell.Tab.0.center" timestamp="1622036961832">
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622040503418" />
+    <state width="1493" height="259" key="GridCell.Tab.0.center" timestamp="1622040503417">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622036961832" />
-    <state width="1493" height="253" key="GridCell.Tab.0.left" timestamp="1622036961832">
+    <state width="1493" height="259" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622040503417" />
+    <state width="1493" height="259" key="GridCell.Tab.0.left" timestamp="1622040503417">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622036961832" />
-    <state width="1493" height="253" key="GridCell.Tab.0.right" timestamp="1622036961832">
+    <state width="1493" height="259" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622040503417" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right" timestamp="1622040503417">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622036961832" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622040503417" />
     <state width="1493" height="298" key="GridCell.Tab.1.bottom" timestamp="1621953331605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -206,18 +193,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="497" y="118" width="784" height="596" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1621345209922" />
-    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621432263837">
+    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1622117420558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1621432263837" />
+    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1622117420558" />
     <state x="713" y="179" key="extract.method.dialog" timestamp="1621344946458">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="713" y="179" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1621344946458" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1622033105964">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1622038813964">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1622033105964" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1622038813963" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
