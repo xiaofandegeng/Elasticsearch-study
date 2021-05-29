@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/com/atguigu/stack/ArrayStack.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/atguigu/stack/ArrayStackTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/atguigu/stack/Calculator.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/stack/Arraystack2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/stack/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/尚硅谷图解Java数据结构和算法.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/尚硅谷图解Java数据结构和算法.pdf" afterDir="false" />
+>>>>>>> 3ed040989293570bee15cb3bcfa062bf647401b8
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +49,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.ArrayStackTest">
     <configuration name="ArrayStackTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.stack.ArrayStackTest" />
+=======
+  <component name="RunManager" selected="Application.Calculator">
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.stack.Calculator" />
+>>>>>>> 3ed040989293570bee15cb3bcfa062bf647401b8
       <module name="suanfa-study" />
       <extension name="coverage">
         <pattern>
@@ -111,9 +127,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Application.ArrayStackTest" />
+=======
+        <item itemvalue="Application.Calculator" />
+>>>>>>> 3ed040989293570bee15cb3bcfa062bf647401b8
         <item itemvalue="Application.CircleLinkedListTest" />
         <item itemvalue="Application.DoubleLinkedListTest" />
         <item itemvalue="Application.SingleLinkedListDemo" />
@@ -121,6 +152,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -140,12 +172,18 @@
       <workItem from="1621604548468" duration="65000" />
       <workItem from="1621763495609" duration="599000" />
       <workItem from="1621864151674" duration="6584000" />
+<<<<<<< HEAD
       <workItem from="1621949814609" duration="15442000" />
       <workItem from="1622113684824" duration="3344000" />
+=======
+      <workItem from="1621949814609" duration="11362000" />
+      <workItem from="1622167072886" duration="6061000" />
+>>>>>>> 3ed040989293570bee15cb3bcfa062bf647401b8
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
+<<<<<<< HEAD
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
@@ -205,6 +243,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1622038813963" />
+=======
+    <option name="version" value="3" />
+>>>>>>> 3ed040989293570bee15cb3bcfa062bf647401b8
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -216,5 +257,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

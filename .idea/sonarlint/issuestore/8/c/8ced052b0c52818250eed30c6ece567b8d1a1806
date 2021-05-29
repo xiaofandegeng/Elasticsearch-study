@@ -1,0 +1,19 @@
+
+T	java:S106œ"9Replace this use of System.out or System.err by a logger.(ì­øúÿÿÿÿ
+z	java:S135)"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8ˆÙ±²š/
+z	java:S135Q"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8ˆÙ±²š/
+z	java:S135s"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8ˆÙ±²š/
+L
+java:S5411_"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ8ˆÙ±²š/
+s
+java:S34579"Q%n should be used in place of \n to produce the platform-specific line separator.(è¢”àùÿÿÿÿ8ˆÙ±²š/
+Z	java:S1069"9Replace this use of System.out or System.err by a logger.(è¢”àùÿÿÿÿ8ˆÙ±²š/
+Z	java:S106I"9Replace this use of System.out or System.err by a logger.(¨Œµùÿÿÿÿ8ˆÙ±²š/
+n
+java:S3457c"Q%n should be used in place of \n to produce the platform-specific line separator.(ï˜«²8ˆÙ±²š/
+U	java:S106c"9Replace this use of System.out or System.err by a logger.(ï˜«²8ˆÙ±²š/
+T	java:S106k"9Replace this use of System.out or System.err by a logger.(Š£ÌV8ˆÙ±²š/
+o
+java:S3457‰"Q%n should be used in place of \n to produce the platform-specific line separator.(™ÍÀÕ8ˆÙ±²š/
+V	java:S106‰"9Replace this use of System.out or System.err by a logger.(™ÍÀÕ8ˆÙ±²š/
+[	java:S106“"9Replace this use of System.out or System.err by a logger.(¨Œµùÿÿÿÿ8ˆÙ±²š/

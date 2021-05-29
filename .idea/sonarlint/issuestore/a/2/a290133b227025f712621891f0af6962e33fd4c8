@@ -1,8 +1,31 @@
 
-q	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
-q	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
-q	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
-C
-java:S5411"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ
-e
-java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(™ÍÀÕ
+L
+java:S5411Y"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ8ˆÙ±²š/
+n
+java:S3457]"Q%n should be used in place of \n to produce the platform-specific line separator.(ï˜«²8ˆÙ±²š/
+s
+java:S34578"Q%n should be used in place of \n to produce the platform-specific line separator.(è¢”àùÿÿÿÿ8ˆÙ±²š/
+U	java:S106~"9Replace this use of System.out or System.err by a logger.(™ÍÀÕ8ˆÙ±²š/
+Z	java:S1068"9Replace this use of System.out or System.err by a logger.(è¢”àùÿÿÿÿ8ˆÙ±²š/
+V	java:S106í"9Replace this use of System.out or System.err by a logger.(ÊØ¡Œ8ˆÙ±²š/
+
+java:S1192C"_Define a constant instead of duplicating this literal "~~~~~~å½“å‰é“¾è¡¨ä¸ºç©º~~~~~~" 3 times.(¨Œµùÿÿÿÿ8ˆÙ±²š/
+z	java:S135("YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8ˆÙ±²š/
+[	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(¨Œµùÿÿÿÿ8ˆÙ±²š/
+V	java:S106±"9Replace this use of System.out or System.err by a logger.(½‡××8ˆÙ±²š/
+z	java:S135m"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8ˆÙ±²š/
+Z	java:S106C"9Replace this use of System.out or System.err by a logger.(¨Œµùÿÿÿÿ8ˆÙ±²š/
+T	java:S106e"9Replace this use of System.out or System.err by a logger.(Š£ÌV8ˆÙ±²š/
+n
+java:S3457~"Q%n should be used in place of \n to produce the platform-specific line separator.(™ÍÀÕ8ˆÙ±²š/
+U	java:S106]"9Replace this use of System.out or System.err by a logger.(ï˜«²8ˆÙ±²š/
+[	java:S106‘"9Replace this use of System.out or System.err by a logger.(ßÆûıúÿÿÿÿ8ˆÙ±²š/
+V	java:S106Æ"9Replace this use of System.out or System.err by a logger.(ú§ˆç8ôÆ…³š/
+\
+java:S1155ì">Use isEmpty() to check whether the collection is empty or not.(äÛŸ–8ˆÙ±²š/
+s
+java:S1149å"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(î±šÖıÿÿÿÿ8ˆÙ±²š/
+[	java:S106à"9Replace this use of System.out or System.err by a logger.(§›â¹øÿÿÿÿ8ˆÙ±²š/
+[	java:S106ë"9Replace this use of System.out or System.err by a logger.(ş¥ì½ùÿÿÿÿ8ˆÙ±²š/
+[	java:S106œ"9Replace this use of System.out or System.err by a logger.(¨Œµùÿÿÿÿ8ˆÙ±²š/
+z	java:S135K"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8ˆÙ±²š/

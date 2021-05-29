@@ -10,16 +10,5 @@ import javax.sound.midi.Soundbank;
  **/
 public class ArrayStackTest {
     public static void main(String[] args) {
-        ArrayStack stack = new ArrayStack(4);
-
-        stack.push(5);
-        stack.push(10);
-        stack.push(15);
-        stack.push(20);
-        stack.push(20);
-
-        stack.list();
-        Integer pop = stack.pop();
-        System.out.println(pop);
     }
 }
