@@ -21,6 +21,9 @@
     <option name="BRANCH" value="origin/main" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+  </component>
   <component name="RunManager">
     <configuration name="PolandNotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.stack.PolandNotation" />
@@ -69,11 +72,19 @@
       <option name="project" value="LOCAL" />
       <updated>1622429760652</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加将字符串转换为中缀表达式的集合">
+      <created>1622450830441</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622450830441</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change" />
-    <option name="LAST_COMMIT_MESSAGE" value="change" />
+    <MESSAGE value="添加将字符串转换为中缀表达式的集合" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加将字符串转换为中缀表达式的集合" />
   </component>
 </project>
