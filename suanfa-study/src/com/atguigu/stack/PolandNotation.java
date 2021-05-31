@@ -27,6 +27,8 @@ public class PolandNotation {
         System.out.println(inFixList);
         List<String> sufFixList = sufFix(inFixList);
         System.out.println(sufFixList);
+        res = cal(sufFixList);
+        System.out.println("计算结果为： " + res);
     }
 
     /**
@@ -64,6 +66,10 @@ public class PolandNotation {
                 }
                 stack.add(item);
             }
+        }
+        //  依次将stack里面的大小加入到list里面
+        while (!stack.isEmpty()) {
+            resList.add(stack.pop());
         }
 
         return resList;
