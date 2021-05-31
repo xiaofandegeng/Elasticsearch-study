@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="" />
+    <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/stack/PolandNotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/stack/PolandNotation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/stack/PolandNotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/stack/PolandNotation.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,41 +17,13 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="D:\code\mavencangku" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../code/maven/apache-maven-3.6.2-bin/apache-maven-3.6.2" />
-        <option name="userSettingsFile" value="D:\code\maven\apache-maven-3.6.2-bin\apache-maven-3.6.2\conf\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1shzE8VTica9krlrxdbNCZ13erZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
-  <component name="RunManager" selected="Application.Calculator">
-    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.stack.Calculator" />
+  <component name="RunManager">
+    <configuration name="PolandNotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.stack.PolandNotation" />
       <module name="suanfa-study" />
       <extension name="coverage">
         <pattern>
@@ -60,109 +35,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircleLinkedListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.linkedlist.circle.CircleLinkedListTest" />
-      <module name="suanfa-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.linkedlist.circle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DoubleLinkedListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.linkedlist.doubleList.DoubleLinkedListTest" />
-      <module name="suanfa-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.linkedlist.singleList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingleLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.linkedlist.singleList.SingleLinkedListDemo" />
-      <module name="suanfa-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.linkedlist.singleList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingleLinkedListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.linkedlist.singleList.SingleLinkedListTest" />
-      <module name="suanfa-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.linkedlist.singleList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Calculator" />
-        <item itemvalue="Application.CircleLinkedListTest" />
-        <item itemvalue="Application.DoubleLinkedListTest" />
-        <item itemvalue="Application.SingleLinkedListDemo" />
-        <item itemvalue="Application.SingleLinkedListTest" />
+        <item itemvalue="Application.PolandNotation" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="" />
-      <created>1621339494502</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1621339494502</updated>
-      <workItem from="1621339497289" duration="5245000" />
-      <workItem from="1621429876927" duration="5991000" />
-      <workItem from="1621512003055" duration="7876000" />
-      <workItem from="1621604194684" duration="25000" />
-      <workItem from="1621604294123" duration="87000" />
-      <workItem from="1621604398376" duration="25000" />
-      <workItem from="1621604548468" duration="65000" />
-      <workItem from="1621763495609" duration="599000" />
-      <workItem from="1621864151674" duration="6584000" />
-      <workItem from="1621949814609" duration="11362000" />
-      <workItem from="1622167072886" duration="7307000" />
+    <task id="LOCAL-00001" summary="change">
+      <created>1622427762087</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622427762087</updated>
     </task>
+    <task id="LOCAL-00002" summary="change">
+      <created>1622429760652</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622429760652</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/atguigu/linkedlist/singleList/SingleLinkedList.java</url>
-          <line>209</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change" />
+    <option name="LAST_COMMIT_MESSAGE" value="change" />
   </component>
 </project>
