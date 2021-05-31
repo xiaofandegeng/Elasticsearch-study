@@ -48,8 +48,8 @@ public class Calculator {
                 //  判断是否到了最后
                 if (index == str.length() - 1) {
                     numStack.push(Integer.parseInt(keepNum));
-                }else {
-                    if(oprStack.isOpr(str.charAt(index+1))){
+                } else {
+                    if (oprStack.isOpr(str.charAt(index + 1))) {
                         numStack.push(Integer.parseInt(keepNum));
                         keepNum = "";
                     }
@@ -57,13 +57,13 @@ public class Calculator {
             }
             index++;
             //  终止循环
-            if(index >= str.length()){
+            if (index >= str.length()) {
                 break;
             }
         }
         //  当扫描完毕，按序取出计算
-        while (true){
-            if(oprStack.isEmpty()){
+        while (true) {
+            if (oprStack.isEmpty()) {
                 break;
             }
             num1 = numStack.pop();
