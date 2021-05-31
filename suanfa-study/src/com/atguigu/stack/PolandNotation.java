@@ -1,9 +1,6 @@
 package com.atguigu.stack;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * <p>DESC: 逆波兰计算器</p>
@@ -19,6 +16,49 @@ public class PolandNotation {
         System.out.println(list);
         int res = cal(list);
         System.out.println("计算结果为： " + res);
+
+        String str1 = "11+((2+3)*5)-6";
+        List<String> inFixList = toInFix(str1);
+        System.out.println(inFixList);
+    }
+
+    /**
+     * 将字符串转换为list
+     *
+     * @param str1 字符串
+     * @return list集合
+     */
+    private static List<String> toInFix(String str1) {
+        List<String> list = new ArrayList<>();
+        char[] chars = str1.toCharArray();
+        StringBuilder str = new StringBuilder();
+
+        for (int i = 0; i < chars.length; i++) {
+            boolean flag = true;
+            //  如果ch不是数字，直接放入list
+            if (chars[i] >= 48 && chars[i] <= 57) {
+                while (flag) {
+                    if (String.valueOf(chars[i]).matches("\\d+") && i != chars.length - 1) {
+                        str.append(chars[i]);
+                        i = i + 1;
+                    } else {
+                        if (i == chars.length - 1) {
+                            list.add(String.valueOf(chars[i]));
+                        } else {
+                            i = i - 1;
+                        }
+                        flag = false;
+                    }
+                }
+                if(!"".equals(str.toString().trim())){
+                    list.add(str.toString());
+                }
+            } else {
+                list.add(String.valueOf(chars[i]));
+            }
+            str = new StringBuilder();
+        }
+        return list;
     }
 
     /**
