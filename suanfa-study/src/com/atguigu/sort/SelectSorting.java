@@ -10,9 +10,10 @@ public class SelectSorting {
     public static void main(String[] args) {
         int[] arr = CommonMethods.getArr(80000);
 
-        CommonMethods.getBeforeTime();
+        long before = CommonMethods.getTime();
         selectSorting(arr);
-        CommonMethods.getAfterTime();
+        long after = CommonMethods.getTime();
+        System.out.println("排序总共消费：" + (after - before) + " 时间");
     }
 
     /**

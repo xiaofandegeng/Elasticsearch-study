@@ -31,4 +31,8 @@ public class CommonMethods {
         String afterDate = simpleDateFormat.format(after);
         System.out.println("排序前的时间为：" + afterDate);
     }
+
+    public static long getTime() {
+        return System.currentTimeMillis();
+    }
 }
