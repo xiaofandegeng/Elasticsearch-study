@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/InsertionSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/InsertionSorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/SelectSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/SelectSorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/InsertionSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/InsertionSorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/SelectSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/SelectSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/recursion/EightQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/recursion/EightQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +43,14 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.InsertionSorting">
+  <component name="RunManager" selected="Application.EightQueueTest">
     <configuration name="BubbleSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.BubbleSorting" />
       <module name="suanfa-study" />
@@ -116,25 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EightQueueTest" />
         <item itemvalue="Application.InsertionSorting" />
         <item itemvalue="Application.SelectSorting" />
         <item itemvalue="Application.BubbleSorting" />
-        <item itemvalue="Application.EightQueueTest" />
         <item itemvalue="Application.Maze" />
       </list>
     </recent_temporary>
@@ -164,6 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622450830441</updated>
     </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="" />
+      <created>1622546114866</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622546114866</updated>
+      <workItem from="1622546119913" duration="1820000" />
+    </task>
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
@@ -174,5 +169,39 @@
     <MESSAGE value="change" />
     <MESSAGE value="添加将字符串转换为中缀表达式的集合" />
     <option name="LAST_COMMIT_MESSAGE" value="添加将字符串转换为中缀表达式的集合" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="926" height="220" key="GridCell.Tab.0.bottom" timestamp="1622547276037">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="926" height="220" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622547276037" />
+    <state width="926" height="220" key="GridCell.Tab.0.center" timestamp="1622547276037">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="926" height="220" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622547276037" />
+    <state width="926" height="220" key="GridCell.Tab.0.left" timestamp="1622547276037">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="926" height="220" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622547276037" />
+    <state width="926" height="220" key="GridCell.Tab.0.right" timestamp="1622547276037">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="926" height="220" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622547276037" />
+    <state width="1493" height="144" key="GridCell.Tab.1.bottom" timestamp="1622547160926">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622547160926" />
+    <state width="1493" height="144" key="GridCell.Tab.1.center" timestamp="1622547160926">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622547160926" />
+    <state width="1493" height="144" key="GridCell.Tab.1.left" timestamp="1622547160926">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622547160926" />
+    <state width="1493" height="144" key="GridCell.Tab.1.right" timestamp="1622547160926">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622547160926" />
   </component>
 </project>

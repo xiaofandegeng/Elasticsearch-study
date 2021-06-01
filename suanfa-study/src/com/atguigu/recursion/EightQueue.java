@@ -1,5 +1,6 @@
 package com.atguigu.recursion;
 
+
 /**
  * <p>DESC: 八皇后回溯法</p>
  * <p>DATE: 2021/6/1</p>
@@ -13,19 +14,18 @@ public class EightQueue {
     int countNum = 0;
 
     /**
-     * 回溯算法
+     * 判断是否成功放置
      *
-     * @param n 当前行数
+     * @param n 起始行数
      */
     public void check(int n) {
-        //  如果行数来到了第九行，运算结束
+        //  如果来到了第九行，则表示已经成功一次
         if (n == max) {
             print();
             return;
         }
-        //  循环去判断，成功则去下一行，否则
-        for (int i = 0; i < max; i++) {
-            //  先将当前皇后放置第一列，然后依次后移
+        for (int i = 0; i < arr.length; i++) {
+            //  当前行的皇后从0列的位置开始
             arr[n] = i;
             if (judge(n)) {
                 check(n + 1);
@@ -34,17 +34,17 @@ public class EightQueue {
     }
 
     /**
-     * 判断目前这行什么位置能够放置皇后
+     * 判断当前皇后能否放置成功，成功为true，失败为false
      *
      * @param n 当前行数
-     * @return 成功表示能够放置皇后
+     * @return 能否防止
      */
     public boolean judge(int n) {
-        //  记录回溯算法执行了多少次
+        //  记录进来判断了多少次
         countNum++;
-        //  当前皇后不能与之前的皇后在同一行和斜行上（斜行用等腰直角三角形的两条边来表示，也就是斜率为1）
+        //  与之前的列比较，如果不在同一列，同一条斜线（斜线用等腰三角形，斜率为1判断），则允许放置
         for (int i = 0; i < n; i++) {
-            if (arr[n] == arr[i] || Math.abs(n - i) == Math.abs(arr[n] - arr[i])) {
+            if (arr[i] == arr[n] || Math.abs(n - i) == Math.abs(arr[n] - arr[i])) {
                 return false;
             }
         }
@@ -52,13 +52,12 @@ public class EightQueue {
     }
 
     /**
-     * 打印每一种结果
+     * 打印每一种成功的结果，并记录成功了多少次
      */
     public void print() {
-        //  记录一共有多少中解法
         count++;
-        for (int j : arr) {
-            System.out.print(j + " ");
+        for (int value : arr) {
+            System.out.print(value + " ");
         }
         System.out.println();
     }
