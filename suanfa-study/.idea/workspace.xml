@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/sort/InsertionSorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/CommonMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/CommonMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/InsertionSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/InsertionSorting.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/SelectSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/SelectSorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/BubbleSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/BubbleSorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/CommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/InsertionSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/InsertionSorting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/SelectSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/SelectSorting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +50,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.BubbleSorting">
+  <component name="RunManager" selected="Application.InsertionSorting">
     <configuration name="BubbleSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.BubbleSorting" />
       <module name="suanfa-study" />
@@ -133,9 +131,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BubbleSorting" />
-        <item itemvalue="Application.SelectSorting" />
         <item itemvalue="Application.InsertionSorting" />
+        <item itemvalue="Application.SelectSorting" />
+        <item itemvalue="Application.BubbleSorting" />
         <item itemvalue="Application.EightQueueTest" />
         <item itemvalue="Application.Maze" />
       </list>

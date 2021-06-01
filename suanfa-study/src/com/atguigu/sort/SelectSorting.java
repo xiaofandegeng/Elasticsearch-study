@@ -8,7 +8,7 @@ package com.atguigu.sort;
  */
 public class SelectSorting {
     public static void main(String[] args) {
-        int[] arr = CommonMethods.getArr(80000);
+        int[] arr = CommonMethods.getArr(800000);
 
         long before = CommonMethods.getTime();
         selectSorting(arr);

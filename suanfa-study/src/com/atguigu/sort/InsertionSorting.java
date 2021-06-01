@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 public class InsertionSorting {
     public static void main(String[] args) {
-        int[] arr = CommonMethods.getArr(80000);
+        int[] arr = CommonMethods.getArr(800000);
 
         long before = CommonMethods.getTime();
         insertSorting(arr);
@@ -27,13 +27,16 @@ public class InsertionSorting {
     private static void insertSorting(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int insetValue = arr[i];
-            int inserIndex = i - 1;
+            int insertIndex = i - 1;
             //  保证insertIndex 不越界
-            while (inserIndex >= 0 && insetValue < arr[inserIndex]) {
-                arr[inserIndex + 1] = arr[inserIndex];
-                inserIndex--;
+            while (insertIndex >= 0 && insetValue < arr[insertIndex]) {
+                arr[insertIndex + 1] = arr[insertIndex];
+                insertIndex--;
             }
-            arr[inserIndex + 1] = insetValue;
+            if (insertIndex + 1 != i) {
+                arr[insertIndex + 1] = insetValue;
+            }
+
 
             //System.out.println("第" + i + "次排序后的结果为： " + Arrays.toString(arr));
         }
