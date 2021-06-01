@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/sort/SelectSorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/BubbleSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/BubbleSorting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/sort/CommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/SelectSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/SelectSorting.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/BubbleSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/BubbleSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/SelectSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/SelectSorting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.BubbleSorting">
+  <component name="RunManager" selected="Application.SelectSorting">
     <configuration name="BubbleSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.BubbleSorting" />
       <module name="suanfa-study" />
@@ -102,6 +103,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SelectSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.SelectSorting" />
+      <module name="suanfa-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -117,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SelectSorting" />
         <item itemvalue="Application.BubbleSorting" />
         <item itemvalue="Application.EightQueueTest" />
         <item itemvalue="Application.Maze" />

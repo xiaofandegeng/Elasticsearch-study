@@ -12,21 +12,11 @@ import java.util.Date;
  */
 public class BubbleSorting {
     public static void main(String[] args) {
-        int size = 80000;
-        int[] arr = new int[size];
-        for (int i = 0; i < size; i++) {
-            arr[i] = (int) (Math.random() * 800000);
-        }
+        int[] arr = CommonMethods.getArr(80000);
 
-        Date before = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String beforeDate = simpleDateFormat.format(before);
-        System.out.println("排序前的时间为：" + beforeDate);
+        CommonMethods.getBeforeTime();
         bubbleSorting(arr);
-
-        Date after = new Date();
-        String afterDate = simpleDateFormat.format(after);
-        System.out.println("排序前的时间为：" + afterDate);
+        CommonMethods.getAfterTime();
     }
 
     /**

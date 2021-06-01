@@ -8,6 +8,35 @@ package com.atguigu.sort;
  */
 public class SelectSorting {
     public static void main(String[] args) {
-        int[] arr = {10, 8, 45, 34, 57, 15, 64, 78, 55, 10};
+        int[] arr = CommonMethods.getArr(80000);
+
+        CommonMethods.getBeforeTime();
+        selectSorting(arr);
+        CommonMethods.getAfterTime();
+    }
+
+    /**
+     * 选择排序
+     *
+     * @param arr 需要排序的数组
+     */
+    private static void selectSorting(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            int minIndex = i;
+            int min = arr[minIndex];
+            for (int j = i + 1; j < arr.length; j++) {
+                if (min > arr[j]) {
+                    minIndex = j;
+                    min = arr[minIndex];
+                }
+            }
+            if (minIndex != i) {
+                arr[minIndex] = arr[i];
+                arr[i] = min;
+            }
+
+        }
+
+        //System.out.println("排序后：" + Arrays.toString(arr));
     }
 }
