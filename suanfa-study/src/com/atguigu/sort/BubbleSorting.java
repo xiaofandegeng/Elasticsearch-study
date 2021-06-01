@@ -10,15 +10,15 @@ import java.util.Arrays;
  */
 public class BubbleSorting {
     public static void main(String[] args) {
-//        int[] arr = CommonMethods.getArr(80000);
-//
-//        long before = CommonMethods.getTime();
-//        bubbleSorting(arr);
-//        long after = CommonMethods.getTime();
-//        System.out.println("排序总共消费：" + (after - before) + " 时间");
+        int[] arr = CommonMethods.getArr(100000);
 
-        int[] deriveArr = {13, 11, 15, 9, 10};
-        derive(deriveArr);
+        long before = CommonMethods.getTime();
+        bubbleSorting(arr);
+        long after = CommonMethods.getTime();
+        System.out.println("冒泡排序总共使用了：" + (after - before) + " 时间");
+
+//        int[] deriveArr = {13, 11, 15, 9, 10};
+//        derive(deriveArr);
 
 
     }

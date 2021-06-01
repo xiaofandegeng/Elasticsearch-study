@@ -35,7 +35,6 @@ public class SelectSorting {
                 arr[minIndex] = arr[i];
                 arr[i] = min;
             }
-
         }
 
         //System.out.println("排序后：" + Arrays.toString(arr));
