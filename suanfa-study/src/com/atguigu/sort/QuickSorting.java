@@ -9,17 +9,19 @@ import java.util.Arrays;
  * <p>@AUTHOR: lhw</p>
  */
 public class QuickSorting {
+    private static int count = 0;
+
     public static void main(String[] args) {
 
-        int[] arr = CommonMethods.getArr(1000000);
-        long before = CommonMethods.getTime();
-        quickSort(arr, 0, arr.length - 1);
-        long after = CommonMethods.getTime();
-        System.out.println("排序总共消费：" + (after - before) + " 时间");
-
-//        int[] arr = {5, 7, 1, 9, 3, 4, 6, 2, 8};
+//        int[] arr = CommonMethods.getArr(1000000);
+//        long before = CommonMethods.getTime();
 //        quickSort(arr, 0, arr.length - 1);
-        System.out.println("排序后的数组：" + Arrays.toString(arr));
+//        long after = CommonMethods.getTime();
+//        System.out.println("排序总共消费：" + (after - before) + " 时间");
+
+        int[] arr = {5, 7, 9, 8, 7, 5, 6, 5, 1, 5, 3, 4, 6, 2, 8};
+        quickSort(arr, 0, arr.length - 1);
+//        System.out.println("排序后的数组：" + Arrays.toString(arr));
     }
 
     /**
@@ -35,18 +37,17 @@ public class QuickSorting {
         int r = right;
         int midNum = arr[(l + r) / 2];
         int temp;
-
         // 循环
         while (l < r) {
-            // 如果左侧的值小于中间值，则不交换，只右移坐标
-            if (arr[l] < midNum) {
+            // 找到比中间数值大的左侧坐标
+            while (arr[l] < midNum) {
                 l += 1;
             }
-            // 如果右侧的值大于中间值，则不交换，只左移坐标
-            if (arr[r] > midNum) {
+            // 找到比中间数值小的右侧坐标
+            while (arr[r] > midNum) {
                 r -= 1;
             }
-            // 跳出循环条件
+            // 循环中止条件
             if (l >= r) {
                 break;
             }
@@ -54,26 +55,30 @@ public class QuickSorting {
             temp = arr[l];
             arr[l] = arr[r];
             arr[r] = temp;
-            // 如果左侧的值等于中间值，则r--
+
+            // 如果左侧的值等于中间值，左移r
             if (arr[l] == midNum) {
                 r -= 1;
             }
-            // 如果右侧的值等于中间值，则l++
+            // 如果右侧的值等于中间值，右移l
             if (arr[r] == midNum) {
                 l += 1;
             }
         }
-        // 递归调用，但需要判断l与r的值，避免栈溢出
+        // 避免栈溢出
         if (l == r) {
             l += 1;
             r -= 1;
         }
-        if (left < r) {
-            quickSort(arr, left, r);
-        }
+        // 再次快排
         if (l < right) {
             quickSort(arr, l, right);
         }
+        if (left < r) {
+            quickSort(arr, left, r);
+        }
+
+        System.out.println("第" + (++count) + "次排序后的数组：" + Arrays.toString(arr));
 
     }
 }
