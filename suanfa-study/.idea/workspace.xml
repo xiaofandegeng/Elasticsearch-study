@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/ShellSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/ShellSorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/ShellSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/ShellSorting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/sort/QuickSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/CommonMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/CommonMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/CommonMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.ShellSorting">
+  <component name="RunManager" selected="Application.QuickSorting">
     <configuration name="BubbleSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.BubbleSorting" />
       <module name="suanfa-study" />
@@ -90,8 +91,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.SelectSorting" />
+    <configuration name="QuickSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.QuickSorting" />
       <module name="suanfa-study" />
       <extension name="coverage">
         <pattern>
@@ -131,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QuickSorting" />
         <item itemvalue="Application.ShellSorting" />
         <item itemvalue="Application.BubbleSorting" />
         <item itemvalue="Application.InsertionSorting" />
         <item itemvalue="Application.EightQueueTest" />
-        <item itemvalue="Application.SelectSorting" />
       </list>
     </recent_temporary>
   </component>
