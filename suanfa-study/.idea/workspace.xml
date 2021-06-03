@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/sort/MergeSorting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/QuickSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/QuickSorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/QuickSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/QuickSorting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.QuickSorting">
+  <component name="RunManager" selected="Application.MergeSorting">
     <configuration name="BubbleSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.BubbleSorting" />
       <module name="suanfa-study" />
@@ -64,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EightQueueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.recursion.EightQueueTest" />
+    <configuration name="InsertionSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.InsertionSorting" />
       <module name="suanfa-study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.recursion.*" />
+          <option name="PATTERN" value="com.atguigu.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,8 +77,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.InsertionSorting" />
+    <configuration name="MergeSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.MergeSorting" />
       <module name="suanfa-study" />
       <extension name="coverage">
         <pattern>
@@ -131,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeSorting" />
         <item itemvalue="Application.QuickSorting" />
         <item itemvalue="Application.ShellSorting" />
         <item itemvalue="Application.BubbleSorting" />
         <item itemvalue="Application.InsertionSorting" />
-        <item itemvalue="Application.EightQueueTest" />
       </list>
     </recent_temporary>
   </component>
