@@ -41,33 +41,37 @@ public class MergeSorting {
         int i = left;
         int j = mid + 1;
         int t = 0;
+
+        // 循环
         while (i <= mid && j <= right) {
             if (arr[i] <= arr[j]) {
                 temp[t] = arr[i];
                 i += 1;
-
             } else {
                 temp[t] = arr[j];
                 j += 1;
             }
             t += 1;
         }
+
         while (i <= mid) {
             temp[t] = arr[i];
             i += 1;
             t += 1;
         }
+
         while (j <= right) {
             temp[t] = arr[j];
             j += 1;
             t += 1;
         }
+
         t = 0;
         int tempLeft = left;
         while (tempLeft <= right) {
             arr[tempLeft] = temp[t];
-            tempLeft += 1;
             t += 1;
+            tempLeft += 1;
         }
     }
 }
