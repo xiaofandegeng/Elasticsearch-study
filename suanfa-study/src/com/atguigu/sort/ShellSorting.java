@@ -9,6 +9,8 @@ import java.util.Arrays;
  * @Version 1.0
  **/
 public class ShellSorting {
+    private static final int TWO = 2;
+
     public static void main(String[] args) {
 //        int[] arr = {8, 9, 1, 7, 2, 3, 5, 4, 6, 0};
         int[] arr = CommonMethods.getArr(10000);
@@ -29,7 +31,7 @@ public class ShellSorting {
         // 1.第一次交换
         int temp;
 
-        for (int gap = arr.length / 2; gap > 0; gap /= 2) {
+        for (int gap = arr.length / TWO; gap > 0; gap /= TWO) {
             for (int i = gap; i < arr.length; i++) {
                 for (int j = i - gap; j >= 0; j -= gap) {
                     if (arr[j] > arr[j + gap]) {
@@ -86,21 +88,20 @@ public class ShellSorting {
      */
     private static void shellSortMove(int[] arr) {
         int count = 0;
-        for (int gap = arr.length / 2; gap > 0; gap/=2){
-
+        for (int gap = arr.length / TWO; gap > 0; gap /= TWO) {
             for (int i = gap; i < arr.length; i++) {
                 int j = i;
                 int temp = arr[j];
-                if(arr[j] < arr[j-gap]){
-                    while (j - gap >=0 && temp < arr[j -gap]){
-                        arr[j] = arr[j-gap];
+                if (arr[j] < arr[j - gap]) {
+                    while (j - gap >= 0 && temp < arr[j - gap]) {
+                        arr[j] = arr[j - gap];
                         j -= gap;
                     }
                     arr[j] = temp;
                 }
             }
             count++;
-            System.out.println("第"+count+"次希尔排序后的结果为：" + Arrays.toString(arr));
+            System.out.println("第" + count + "次希尔排序后的结果为：" + Arrays.toString(arr));
         }
     }
 }
