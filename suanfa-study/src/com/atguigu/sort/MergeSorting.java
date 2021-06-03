@@ -10,10 +10,16 @@ import java.util.Arrays;
  */
 public class MergeSorting {
     public static void main(String[] args) {
-        int[] arr = {8, 4, 5, 7, 1, 3, 6, 2};
+//        int[] arr = {8, 4, 5, 7, 1, 3, 6, 2};
 
+        int[] arr = CommonMethods.getArr(1000000);
         int[] temp = new int[arr.length];
+
+        long before = CommonMethods.getTime();
         mergeSort(arr, 0, arr.length - 1, temp);
+        long after = CommonMethods.getTime();
+        System.out.println("排序总共消费：" + (after - before) + " 时间");
+
         System.out.println("排序后的数组： " + Arrays.toString(arr));
     }
 
