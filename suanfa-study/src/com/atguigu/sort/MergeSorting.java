@@ -10,15 +10,15 @@ import java.util.Arrays;
  */
 public class MergeSorting {
     public static void main(String[] args) {
-//        int[] arr = {8, 4, 5, 7, 1, 3, 6, 2};
+        int[] arr = {8, 4, 5, 9,10,45,65,85,78,95,15,35,45,5,3,4,6, 7, 1, 3, 6, 2};
 
-        int[] arr = CommonMethods.getArr(1000000);
+//        int[] arr = CommonMethods.getArr(1000000);
         int[] temp = new int[arr.length];
-
-        long before = CommonMethods.getTime();
+//
+//        long before = CommonMethods.getTime();
         mergeSort(arr, 0, arr.length - 1, temp);
-        long after = CommonMethods.getTime();
-        System.out.println("排序总共消费：" + (after - before) + " 时间");
+//        long after = CommonMethods.getTime();
+//        System.out.println("排序总共消费：" + (after - before) + " 时间");
 
         System.out.println("排序后的数组： " + Arrays.toString(arr));
     }
@@ -31,7 +31,6 @@ public class MergeSorting {
 
             merge(arr, left, mid, right, temp);
         }
-
     }
 
     /**
@@ -47,10 +46,8 @@ public class MergeSorting {
         int i = left;
         int j = mid + 1;
         int t = 0;
-
-        // 循环
         while (i <= mid && j <= right) {
-            if (arr[i] <= arr[j]) {
+            if (arr[i] < arr[j]) {
                 temp[t] = arr[i];
                 i += 1;
             } else {
@@ -59,13 +56,12 @@ public class MergeSorting {
             }
             t += 1;
         }
-
+        // 将剩下未加入的数据放到临时数组里面
         while (i <= mid) {
             temp[t] = arr[i];
             i += 1;
             t += 1;
         }
-
         while (j <= right) {
             temp[t] = arr[j];
             j += 1;
@@ -79,5 +75,6 @@ public class MergeSorting {
             t += 1;
             tempLeft += 1;
         }
+
     }
 }
