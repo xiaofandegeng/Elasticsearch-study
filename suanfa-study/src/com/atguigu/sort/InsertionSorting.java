@@ -10,12 +10,15 @@ import java.util.Arrays;
  */
 public class InsertionSorting {
     public static void main(String[] args) {
-        int[] arr = CommonMethods.getArr(800000);
+//        int[] arr = CommonMethods.getArr(800000);
+//
+//        long before = CommonMethods.getTime();
+//        insertSorting(arr);
+//        long after = CommonMethods.getTime();
+//        System.out.println("排序总共消费：" + (after - before) + " 时间");
 
-        long before = CommonMethods.getTime();
+        int[] arr = {9, 4, 7, 6, 2, 1, 4, 5, 6, 3, 8, 4, 5, 3, 1, 8, 9, 7, 5, 1};
         insertSorting(arr);
-        long after = CommonMethods.getTime();
-        System.out.println("排序总共消费：" + (after - before) + " 时间");
 
     }
 
@@ -26,19 +29,16 @@ public class InsertionSorting {
      */
     private static void insertSorting(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
-            int insetValue = arr[i];
-            int insertIndex = i - 1;
-            //  保证insertIndex 不越界
-            while (insertIndex >= 0 && insetValue < arr[insertIndex]) {
+            int insertValue = arr[i];
+            int insertIndex = i -1;
+            while (insertIndex >=0 && insertValue < arr[insertIndex]){
                 arr[insertIndex + 1] = arr[insertIndex];
-                insertIndex--;
+                insertIndex -=1;
             }
-            if (insertIndex + 1 != i) {
-                arr[insertIndex + 1] = insetValue;
+            if(insertIndex + 1 != i){
+                arr[insertIndex + 1] = insertValue;
             }
-
-
-            //System.out.println("第" + i + "次排序后的结果为： " + Arrays.toString(arr));
+            System.out.println("第" + i + "次排序后的结果为： " + Arrays.toString(arr));
         }
     }
 

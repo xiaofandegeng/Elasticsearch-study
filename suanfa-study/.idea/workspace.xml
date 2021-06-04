@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52732827-e4b7-4905-b87c-c47683d74562" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/SelectSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/SelectSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/META-INF/suanfa-study.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/InsertionSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/sort/InsertionSorting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/stack/PolandNotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/stack/PolandNotation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/InsertionSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/InsertionSorting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +29,22 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.SelectSorting">
+  <component name="RunManager" selected="Application.InsertionSorting">
     <configuration name="BubbleSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.BubbleSorting" />
+      <module name="suanfa-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsertionSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.InsertionSorting" />
       <module name="suanfa-study" />
       <extension name="coverage">
         <pattern>
@@ -66,19 +82,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InsertionSorting" />
         <item itemvalue="Application.SelectSorting" />
         <item itemvalue="Application.BubbleSorting" />
         <item itemvalue="Application.RadixSorting" />
@@ -93,7 +99,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622771586174</updated>
-      <workItem from="1622771590394" duration="4007000" />
+      <workItem from="1622771590394" duration="6063000" />
+      <workItem from="1622785538761" duration="2427000" />
     </task>
     <servers />
   </component>
