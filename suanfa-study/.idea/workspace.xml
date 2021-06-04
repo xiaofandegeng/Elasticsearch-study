@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52732827-e4b7-4905-b87c-c47683d74562" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/BubbleSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/BubbleSorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/RadixSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/RadixSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/sort/SelectSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/sort/SelectSorting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +23,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.BubbleSorting">
+  <component name="RunManager" selected="Application.SelectSorting">
     <configuration name="BubbleSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.BubbleSorting" />
       <module name="suanfa-study" />
@@ -53,6 +53,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SelectSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.SelectSorting" />
+      <module name="suanfa-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -66,6 +79,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SelectSorting" />
         <item itemvalue="Application.BubbleSorting" />
         <item itemvalue="Application.RadixSorting" />
       </list>
@@ -79,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622771586174</updated>
-      <workItem from="1622771590394" duration="1362000" />
+      <workItem from="1622771590394" duration="4007000" />
     </task>
     <servers />
   </component>

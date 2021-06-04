@@ -21,8 +21,6 @@ Y
 )src/com/atguigu/recursion/EightQueue.java,b\1\b11047f793df0f7382b9d3acd1bca1110be57f0f
 S
 #src/com/atguigu/recursion/Maze.java,a\6\a6cc2c3c45ebddbcf3be5675a2dbb09fdd7798a9
-W
-'src/com/atguigu/sort/SelectSorting.java,6\6\66f69ca624be899624ed84fbf484656cd66deb40
 Z
 *src/com/atguigu/sort/InsertionSorting.java,2\3\23fa05c23504a92df08a91765aeea5e99af729d5
 V
