@@ -10,16 +10,18 @@ import java.util.Arrays;
  */
 public class BubbleSorting {
     public static void main(String[] args) {
-        int[] arr = CommonMethods.getArr(100000);
-
-        long before = CommonMethods.getTime();
-        bubbleSorting(arr);
-        long after = CommonMethods.getTime();
-        System.out.println("冒泡排序总共使用了：" + (after - before) + " 时间");
+//        int[] arr = CommonMethods.getArr(100000);
+//
+//        long before = CommonMethods.getTime();
+//        bubbleSorting(arr);
+//        long after = CommonMethods.getTime();
+//        System.out.println("冒泡排序总共使用了：" + (after - before) + " 时间");
 
 //        int[] deriveArr = {13, 11, 15, 9, 10};
 //        derive(deriveArr);
 
+        int[] arr = {9, 4, 7, 6, 2, 1, 4, 5, 6, 3, 8, 4, 5, 3, 1, 8, 9, 7, 5, 1};
+        bubbleSort(arr);
 
     }
 
@@ -28,27 +30,25 @@ public class BubbleSorting {
      *
      * @param arr 输入数组
      */
-    private static void bubbleSorting(int[] arr) {
+    private static void bubbleSort(int[] arr) {
         //  冒泡排序的优化，添加一个符号，如果这次没有移动，则表示排序已结束
         boolean flag = false;
         int temp;
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {
-                if (arr[j] > arr[j + 1]) {
+                if (arr[j] >= arr[j + 1]) {
                     flag = true;
                     temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                 }
             }
-            //  进入了排序，至少还需要一次排序
+            System.out.println("第" + (i + 1) + "趟排序后的结果为： " + Arrays.toString(arr));
             if (flag) {
                 flag = false;
             } else {
                 break;
             }
-
-//            System.out.println("第" + (i + 1) + "趟排序后的结果为： " + Arrays.toString(arr));
         }
     }
 
@@ -113,12 +113,12 @@ public class BubbleSorting {
                 }
             }
             // 如果flag为真，则表示进入了循环的，则下一次可能要排序，否则则不再需要排序了
-            if(flag){
+            if (flag) {
                 flag = false;
-            }else {
+            } else {
                 break;
             }
-            System.out.println("第"+i+"次排序后的结果：" + Arrays.toString(arr));
+            System.out.println("第" + i + "次排序后的结果：" + Arrays.toString(arr));
         }
 
     }

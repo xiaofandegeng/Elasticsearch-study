@@ -30,8 +30,9 @@ public class RadixSorting {
         // 找出最大值的长度，好计算循环多少次
         int max = arr[0];
         for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > max)
+            if (arr[i] > max) {
                 max = arr[i];
+            }
         }
         int maxLength = String.valueOf(max).length();
 

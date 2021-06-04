@@ -1,0 +1,10 @@
+
+t	java:S127q"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÖÚª8¯éâŒœ/
+o
+java:S3776e"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Éà£8˜›Œœ/
+h	java:S112§"FDefine and throw a dedicated exception instead of using a generic one.(ìÄˆ¨üÿÿÿÿ8É·ÂŒœ/
+s
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ƒÿƒ—ùÿÿÿÿ8É·ÂŒœ/
+y	java:S127v"XRefactor the code in order to not assign to this loop counter from within the loop body.(¼È²ûÿÿÿÿ8¯éâŒœ/
+r
+java:S1149)"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ƒÿƒ—ùÿÿÿÿ8ªŠ´œ/
