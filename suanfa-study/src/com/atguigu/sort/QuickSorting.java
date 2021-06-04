@@ -78,7 +78,6 @@ public class QuickSorting {
             quickSort(arr, left, r);
         }
 
-        System.out.println("第" + (++count) + "次排序后的数组：" + Arrays.toString(arr));
-
+//        System.out.println("第" + (++count) + "次排序后的数组：" + Arrays.toString(arr));
     }
 }

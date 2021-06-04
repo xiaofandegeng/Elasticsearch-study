@@ -5,10 +5,6 @@ U
 %src/com/atguigu/stack/Calculator.java,5\1\515ac07b202aef47efc757591e77cbc291830124
 W
 'src/com/atguigu/sort/CommonMethods.java,5\2\528e55496210d165ddda219b525d4340c3dcf5fb
-V
-&src/com/atguigu/sort/QuickSorting.java,4\b\4b1723996bf353544d581d821076c28386226003
-V
-&src/com/atguigu/sort/ShellSorting.java,6\b\6b11f50f4437249fd9f6dd51f6c365fecf19c84c
 Y
 )src/com/atguigu/stack/ArrayStackTest.java,f\0\f00d40d9a706aa2abc42e7ef2af4937dd5e350f4
 d
@@ -21,7 +17,5 @@ Y
 )src/com/atguigu/recursion/EightQueue.java,b\1\b11047f793df0f7382b9d3acd1bca1110be57f0f
 S
 #src/com/atguigu/recursion/Maze.java,a\6\a6cc2c3c45ebddbcf3be5675a2dbb09fdd7798a9
-V
-&src/com/atguigu/sort/MergeSorting.java,6\3\63c966fefc509cbd9cd1203ea2bb068f557c2f4a
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
