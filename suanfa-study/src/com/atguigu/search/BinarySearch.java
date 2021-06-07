@@ -12,12 +12,12 @@ import java.util.List;
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = {1, 5, 8, 66, 66, 66, 66, 66, 444, 444, 666, 888};
-//        int index = binarySearch(arr, 0, arr.length - 1, 444);
-//        if (index == -1) {
-//            System.out.println("没有找到这个值！");
-//        } else {
-//            System.out.println("查找到这个值，它的下标为：" + index);
-//        }
+        int index = binarySearch(arr, 0, arr.length - 1, 444);
+        if (index == -1) {
+            System.out.println("没有找到这个值！");
+        } else {
+            System.out.println("查找到这个值，它的下标为：" + index);
+        }
         List<Integer> list = binarySearch2(arr, 0, arr.length - 1, 444);
         System.out.println(list);
     }

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52732827-e4b7-4905-b87c-c47683d74562" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/atguigu/search/SeqSearch.java" afterDir="false" />
     <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
@@ -158,6 +159,7 @@
       <updated>1622771586174</updated>
       <workItem from="1622771590394" duration="6063000" />
       <workItem from="1622785538761" duration="7505000" />
+      <workItem from="1623036967293" duration="4372000" />
       <workItem from="1623036967293" duration="4257000" />
       <workItem from="1623036967293" duration="1615000" />
       <updated>1622726898780</updated>
