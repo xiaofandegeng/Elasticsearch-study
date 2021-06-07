@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52732827-e4b7-4905-b87c-c47683d74562" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/atguigu/search/SeqSearch.java" afterDir="false" />
     <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/com/atguigu/sort/RadixSorting.java" afterDir="false" />
@@ -49,10 +50,13 @@
   <component name="RunManager" selected="Application.SeqSearch">
     <configuration name="BubbleSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.BubbleSorting" />
+  <component name="RunManager" selected="Application.BinarySearch">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.search.BinarySearch" />
       <module name="suanfa-study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.sort.*" />
+          <option name="PATTERN" value="com.atguigu.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,11 +131,11 @@
       <list>
         <item itemvalue="Application.RadixSorting" />
         <item itemvalue="Application.MergeSorting" />
+        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.SeqSearch" />
         <item itemvalue="Application.QuickSorting" />
         <item itemvalue="Application.InsertionSorting" />
         <item itemvalue="Application.SelectSorting" />
-        <item itemvalue="Application.BubbleSorting" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +158,7 @@
       <updated>1622771586174</updated>
       <workItem from="1622771590394" duration="6063000" />
       <workItem from="1622785538761" duration="7505000" />
+      <workItem from="1623036967293" duration="4257000" />
       <workItem from="1623036967293" duration="1615000" />
       <updated>1622726898780</updated>
       <workItem from="1622726903711" duration="57000" />
@@ -163,6 +168,18 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
