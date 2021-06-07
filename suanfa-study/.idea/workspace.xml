@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list default="true" id="52732827-e4b7-4905-b87c-c47683d74562" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/search/SeqSearch.java" afterDir="false" />
     <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/com/atguigu/sort/RadixSorting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/尚硅谷图解Java数据结构和算法.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/尚硅谷图解Java数据结构和算法.pdf" afterDir="false" />
@@ -9,6 +11,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,6 +46,9 @@
   <component name="RunManager" selected="Application.RadixSorting">
     <configuration name="MergeSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.MergeSorting" />
+  <component name="RunManager" selected="Application.SeqSearch">
+    <configuration name="BubbleSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.BubbleSorting" />
       <module name="suanfa-study" />
       <extension name="coverage">
         <pattern>
@@ -48,8 +60,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadixSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.RadixSorting" />
+    <configuration name="InsertionSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.InsertionSorting" />
       <module name="suanfa-study" />
       <extension name="coverage">
         <pattern>
@@ -57,6 +69,56 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.QuickSorting" />
+      <module name="suanfa-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.SelectSorting" />
+      <module name="suanfa-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeqSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.search.SeqSearch" />
+      <module name="suanfa-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -65,6 +127,11 @@
       <list>
         <item itemvalue="Application.RadixSorting" />
         <item itemvalue="Application.MergeSorting" />
+        <item itemvalue="Application.SeqSearch" />
+        <item itemvalue="Application.QuickSorting" />
+        <item itemvalue="Application.InsertionSorting" />
+        <item itemvalue="Application.SelectSorting" />
+        <item itemvalue="Application.BubbleSorting" />
       </list>
     </recent_temporary>
   </component>
@@ -84,6 +151,10 @@
       <created>1622726898780</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+      <updated>1622771586174</updated>
+      <workItem from="1622771590394" duration="6063000" />
+      <workItem from="1622785538761" duration="7505000" />
+      <workItem from="1623036967293" duration="1615000" />
       <updated>1622726898780</updated>
       <workItem from="1622726903711" duration="57000" />
       <workItem from="1622726984694" duration="5704000" />
