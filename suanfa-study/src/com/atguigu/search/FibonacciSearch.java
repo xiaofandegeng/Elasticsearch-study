@@ -9,11 +9,11 @@ import java.util.Arrays;
  * @Version 1.0
  **/
 public class FibonacciSearch {
-    public static int max = 20;
+    public static final int max = 20;
 
     public static void main(String[] args) {
         int[] arr = {1, 5, 8, 9, 44, 66, 222};
-        int index = fibonacciSearch(arr, 222);
+        int index = fibonacciSearch(arr);
         if (index == -1) {
             System.out.println("没有找到这个值！");
         } else {
@@ -22,7 +22,7 @@ public class FibonacciSearch {
     }
 
 
-    private static int fibonacciSearch(int[] arr, int value) {
+    private static int fibonacciSearch(int[] arr) {
         int low = 0;
         int high = arr.length - 1;
         int k = 0; // 斐波那契的下标
@@ -40,19 +40,15 @@ public class FibonacciSearch {
         }
 
         while (low <= high) {
-            mid = low + f[k -1] - 1;
-            if(value < temp[mid]){
+            mid = low + f[k - 1] - 1;
+            if (222 < temp[mid]) {
                 high = mid - 1;
                 k -= 1;
-            }else if(value > temp[mid]){
+            } else if (222 > temp[mid]) {
                 low = mid + 1;
                 k -= 2;
-            }else {
-                if(mid <= high){
-                    return mid;
-                }else {
-                    return high;
-                }
+            } else {
+                return Math.min(mid, high);
             }
         }
 
