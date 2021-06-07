@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="52732827-e4b7-4905-b87c-c47683d74562" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/atguigu/search/SeqSearch.java" afterDir="false" />
-    <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/com/atguigu/sort/RadixSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/尚硅谷图解Java数据结构和算法.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/尚硅谷图解Java数据结构和算法.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +23,14 @@
       </list>
     </option>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
     </option>
   </component>
   <component name="Git.Settings">
@@ -45,12 +50,6 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
-  <component name="RunManager" selected="Application.RadixSorting">
-    <configuration name="MergeSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.MergeSorting" />
-  <component name="RunManager" selected="Application.SeqSearch">
-    <configuration name="BubbleSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.sort.BubbleSorting" />
   <component name="RunManager" selected="Application.BinarySearch">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.search.BinarySearch" />
@@ -130,8 +129,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RadixSorting" />
-        <item itemvalue="Application.MergeSorting" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.SeqSearch" />
         <item itemvalue="Application.QuickSorting" />
@@ -156,13 +153,12 @@
       <created>1622726898780</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1622771586174</updated>
+      <updated>1622726898780</updated>
       <workItem from="1622771590394" duration="6063000" />
       <workItem from="1622785538761" duration="7505000" />
       <workItem from="1623036967293" duration="4372000" />
       <workItem from="1623036967293" duration="4257000" />
       <workItem from="1623036967293" duration="1615000" />
-      <updated>1622726898780</updated>
       <workItem from="1622726903711" duration="57000" />
       <workItem from="1622726984694" duration="5704000" />
     </task>
@@ -171,18 +167,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="归并算法" />
