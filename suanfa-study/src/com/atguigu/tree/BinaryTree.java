@@ -36,6 +36,47 @@ public class BinaryTree {
             System.out.println("当前二叉树为空，无法遍历");
         }
     }
+
+    public HeroNode preSearch(int no) {
+        HeroNode res = null;
+        if (this.root != null) {
+            res = this.root.preSearch(no);
+        } else {
+            System.out.println("当前二叉树为空，无法遍历");
+        }
+        return res;
+    }
+    public HeroNode inFixSearch(int no) {
+        HeroNode res = null;
+        if (this.root != null) {
+            res = this.root.inFixSearch(no);
+        } else {
+            System.out.println("当前二叉树为空，无法遍历");
+        }
+        return res;
+    }
+    public HeroNode nextSearch(int no) {
+        HeroNode res = null;
+        if (this.root != null) {
+            res = this.root.nextSearch(no);
+        } else {
+            System.out.println("当前二叉树为空，无法遍历");
+        }
+        return res;
+    }
+
+    public void delNode(int no) {
+        if(this.root != null){
+            // 删除节点是root
+            if(this.root.getNo() == no){
+                root = null;
+            }else {
+                root.delNode(no);
+            }
+        }else {
+            System.out.println("这是一个空树，不能删除！");
+        }
+    }
 }
 
 

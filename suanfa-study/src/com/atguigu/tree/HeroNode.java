@@ -71,28 +71,25 @@ public class HeroNode {
         }
     }
 
-    public HeroNode preOrderSearch(int no) {
+    public HeroNode preSearch(int no) {
         System.out.println("进入前序遍历");
         if (this.getNo() == no) {
             return this;
         }
         HeroNode resNode = null;
         if (this.left != null) {
-            resNode = this.left.preOrderSearch(no);
+            resNode = this.left.preSearch(no);
         }
         if (resNode != null) {
             return resNode;
         }
         if (this.right != null) {
-            resNode = this.right.preOrderSearch(no);
+            resNode = this.right.preSearch(no);
         }
 
         return resNode;
     }
 
-    /**
-     * 中序遍历
-     */
     public void infixOrder() {
 
         if (this.left != null) {
@@ -160,5 +157,22 @@ public class HeroNode {
             return this;
         }
         return null;
+    }
+    public void delNode(int no) {
+        if(this.left != null && this.left.no == no){
+            this.left = null;
+            return;
+        }
+        if(this.right != null && this.right.no == no){
+            this.right = null;
+            return;
+        }
+        // 递归删除
+        if(this.left != null){
+            this.left.delNode(no);
+        }
+        if(this.right != null){
+            this.right.delNode(no);
+        }
     }
 }

@@ -24,10 +24,40 @@ public class BinaryTreeTest {
 
 //        // 前序遍历
 //        tree.preOrder();
-//        //中序遍历
+//        // 中序遍历
 //        tree.infixOrder();
-        //后续遍历
-        tree.nextOrder();
+//         // 后续遍历
+//        tree.nextOrder();
+
+//        // 前序遍历查找
+//        HeroNode node = tree.preSearch(5);
+//        if(node != null){
+//            System.out.println("找到了该节点：" + node);
+//        } else {
+//            System.out.println("没有找到该英雄！");
+//        }
+//
+//        // 中序遍历查找
+//        node = tree.inFixSearch(5);
+//        if(node != null){
+//            System.out.println("找到了该节点：" + node);
+//        } else {
+//            System.out.println("没有找到该英雄！");
+//        }
+//
+//        // 后序遍历查找
+//        node = tree.nextSearch(5);
+//        if(node != null){
+//            System.out.println("找到了该节点：" + node);
+//        } else {
+//            System.out.println("没有找到该英雄！");
+//        }
+
+        System.out.println("删除前，前序遍历");
+        tree.preOrder();
+        tree.delNode(3);
+        System.out.println("删除后，前序遍历");
+        tree.preOrder();
 
     }
 }
