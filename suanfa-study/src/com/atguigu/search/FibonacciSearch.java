@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @Version 1.0
  **/
 public class FibonacciSearch {
-    public static final int max = 20;
+    public static final int MAX = 20;
 
     public static void main(String[] args) {
         int[] arr = {1, 5, 8, 9, 44, 66, 222};
@@ -25,7 +25,8 @@ public class FibonacciSearch {
     private static int fibonacciSearch(int[] arr) {
         int low = 0;
         int high = arr.length - 1;
-        int k = 0; // 斐波那契的下标
+        // 斐波那契的下标
+        int k = 0;
         int mid;
         int[] f = f();
 
@@ -59,7 +60,7 @@ public class FibonacciSearch {
      * @return 返回一个斐波那契的数组
      */
     public static int[] f() {
-        int[] res = new int[max];
+        int[] res = new int[MAX];
         res[0] = 1;
         res[1] = 1;
         for (int i = 2; i < res.length; i++) {

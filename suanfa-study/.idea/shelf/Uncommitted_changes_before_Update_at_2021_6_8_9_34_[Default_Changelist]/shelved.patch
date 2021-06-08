@@ -1,0 +1,176 @@
+Index: .idea/sonarlint/issuestore/index.pb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\nV\n&src/com/atguigu/stack/Arraystack2.java\u0012,e\\1\\e1fa68e297c2660f233baf5383ce15efb7d807c1\nU\n%src/com/atguigu/stack/Calculator.java\u0012,5\\1\\515ac07b202aef47efc757591e77cbc291830124\nW\n'src/com/atguigu/sort/CommonMethods.java\u0012,5\\2\\528e55496210d165ddda219b525d4340c3dcf5fb\nY\n)src/com/atguigu/stack/ArrayStackTest.java\u0012,f\\0\\f00d40d9a706aa2abc42e7ef2af4937dd5e350f4\nd\n4.~lock.尚硅谷图解Java数据结构和算法.pdf#\u0012,b\\2\\b2f118c03cec42e99eafce7eb520a061eff633b8\nY\n)src/com/atguigu/stack/PolandNotation.java\u0012,9\\9\\9987eee68f431f8a8b274c50c5cfe4c158964c99\n]\n-src/com/atguigu/recursion/EightQueueTest.java\u0012,6\\4\\64286acbf45eb981eef7e094209e064b9b3e168d\nY\n)src/com/atguigu/recursion/EightQueue.java\u0012,b\\1\\b11047f793df0f7382b9d3acd1bca1110be57f0f\nS\n#src/com/atguigu/recursion/Maze.java\u0012,a\\6\\a6cc2c3c45ebddbcf3be5675a2dbb09fdd7798a9\n9\n\tREADME.md\u0012,8\\e\\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/sonarlint/issuestore/index.pb b/.idea/sonarlint/issuestore/index.pb
+--- a/.idea/sonarlint/issuestore/index.pb	(revision 64c0230662312fd7711f3fb7efbed94b6f3a1a23)
++++ b/.idea/sonarlint/issuestore/index.pb	(date 1623054711727)
+@@ -18,4 +18,16 @@
+ S
+ #src/com/atguigu/recursion/Maze.java,a\6\a6cc2c3c45ebddbcf3be5675a2dbb09fdd7798a9
+ 9
+-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+\ No newline at end of file
++	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
++V
++&src/com/atguigu/sort/ShellSorting.java,6\b\6b11f50f4437249fd9f6dd51f6c365fecf19c84c
++Z
++*src/com/atguigu/sort/InsertionSorting.java,2\3\23fa05c23504a92df08a91765aeea5e99af729d5
++V
++&src/com/atguigu/sort/QuickSorting.java,4\b\4b1723996bf353544d581d821076c28386226003
++V
++&src/com/atguigu/sort/MergeSorting.java,6\3\63c966fefc509cbd9cd1203ea2bb068f557c2f4a
++U
++%src/com/atguigu/search/SeqSearch.java,d\0\d0e1b82c888bfc87ef3b7df6b11daccacd32bdac
++V
++&src/com/atguigu/sort/RadixSorting.java,9\4\940a3b0d3df1a96fe23a90bd44b51747b247a5ff
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"52732827-e4b7-4905-b87c-c47683d74562\" name=\"Default Changelist\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/com/atguigu/search/SeqSearch.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/com/atguigu/sort/RadixSorting.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/尚硅谷图解Java数据结构和算法.pdf\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/尚硅谷图解Java数据结构和算法.pdf\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Merge.Settings\">\r\n    <option name=\"BRANCH\" value=\"origin/main\" />\r\n  </component>\r\n  <component name=\"Git.Pull.Settings\">\r\n    <option name=\"OPTIONS\">\r\n      <set>\r\n        <option value=\"REBASE\" />\r\n      </set>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1tRLLRsCxTYa4bSxXbGYEU2tufV\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SONARLINT_PRECOMMIT_ANALYSIS\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"extract.method.default.visibility\" value=\"private\" />\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.BinarySearch\">\r\n    <configuration name=\"BinarySearch\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.atguigu.search.BinarySearch\" />\r\n      <module name=\"suanfa-study\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.atguigu.search.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"InsertionSorting\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.atguigu.sort.InsertionSorting\" />\r\n      <module name=\"suanfa-study\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.atguigu.sort.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"QuickSorting\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.atguigu.sort.QuickSorting\" />\r\n      <module name=\"suanfa-study\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.atguigu.sort.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SelectSorting\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.atguigu.sort.SelectSorting\" />\r\n      <module name=\"suanfa-study\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.atguigu.sort.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SeqSearch\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.atguigu.search.SeqSearch\" />\r\n      <module name=\"suanfa-study\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.atguigu.search.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"ArquillianJUnit\" factoryName=\"\" nameIsGenerated=\"true\">\r\n      <option name=\"arquillianRunConfiguration\">\r\n        <value>\r\n          <option name=\"containerStateName\" value=\"\" />\r\n        </value>\r\n      </option>\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.BinarySearch\" />\r\n        <item itemvalue=\"Application.SeqSearch\" />\r\n        <item itemvalue=\"Application.QuickSorting\" />\r\n        <item itemvalue=\"Application.InsertionSorting\" />\r\n        <item itemvalue=\"Application.SelectSorting\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task id=\"LOCAL-00001\" summary=\"归并算法\">\r\n      <created>1622725072098</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622725072098</updated>\r\n    </task>\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"b61f901a-21eb-420e-8b32-93f0efba1da0\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1622726898780</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1622726898780</updated>\r\n      <workItem from=\"1622771590394\" duration=\"6063000\" />\r\n      <workItem from=\"1622785538761\" duration=\"7505000\" />\r\n      <workItem from=\"1623036967293\" duration=\"4372000\" />\r\n      <workItem from=\"1623036967293\" duration=\"4257000\" />\r\n      <workItem from=\"1623036967293\" duration=\"1615000\" />\r\n      <workItem from=\"1622726903711\" duration=\"57000\" />\r\n      <workItem from=\"1622726984694\" duration=\"5704000\" />\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"归并算法\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"归并算法\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"313\" y=\"0\" key=\"CommitChangelistDialog2\" timestamp=\"1622725070958\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"313\" y=\"0\" key=\"CommitChangelistDialog2/0.0.1536.824@0.0.1536.824\" timestamp=\"1622725070958\" />\r\n    <state x=\"147\" y=\"65\" key=\"DiffContextDialog\" timestamp=\"1622724233033\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"147\" y=\"65\" key=\"DiffContextDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1622724233033\" />\r\n    <state width=\"1493\" height=\"144\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1622735267479\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"144\" key=\"GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824\" timestamp=\"1622735267479\" />\r\n    <state width=\"1493\" height=\"144\" key=\"GridCell.Tab.0.center\" timestamp=\"1622735267479\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"144\" key=\"GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824\" timestamp=\"1622735267479\" />\r\n    <state width=\"1493\" height=\"144\" key=\"GridCell.Tab.0.left\" timestamp=\"1622735267479\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"144\" key=\"GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824\" timestamp=\"1622735267479\" />\r\n    <state width=\"1493\" height=\"144\" key=\"GridCell.Tab.0.right\" timestamp=\"1622735267479\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"144\" key=\"GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824\" timestamp=\"1622735267479\" />\r\n    <state width=\"746\" height=\"121\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1622724887070\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"746\" height=\"121\" key=\"GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824\" timestamp=\"1622724887070\" />\r\n    <state width=\"746\" height=\"121\" key=\"GridCell.Tab.1.center\" timestamp=\"1622724887070\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"746\" height=\"121\" key=\"GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824\" timestamp=\"1622724887070\" />\r\n    <state width=\"746\" height=\"121\" key=\"GridCell.Tab.1.left\" timestamp=\"1622724887070\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"746\" height=\"121\" key=\"GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824\" timestamp=\"1622724887070\" />\r\n    <state width=\"746\" height=\"121\" key=\"GridCell.Tab.1.right\" timestamp=\"1622724887070\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"746\" height=\"121\" key=\"GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824\" timestamp=\"1622724887070\" />\r\n    <state x=\"361\" y=\"145\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1622725086703\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"361\" y=\"145\" key=\"Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824\" timestamp=\"1622725086703\" />\r\n    <state x=\"499\" y=\"157\" key=\"extract.method.dialog\" timestamp=\"1622734518264\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"499\" y=\"157\" key=\"extract.method.dialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1622734518264\" />\r\n    <state x=\"477\" y=\"199\" key=\"git4idea.merge.GitPullDialog\" timestamp=\"1622724980514\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"477\" y=\"199\" key=\"git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1622724980514\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/com/atguigu/sort/MergeSorting.java</url>\r\n          <line>45</line>\r\n          <option name=\"timeStamp\" value=\"2\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 64c0230662312fd7711f3fb7efbed94b6f3a1a23)
++++ b/.idea/workspace.xml	(date 1623116086411)
+@@ -5,11 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="52732827-e4b7-4905-b87c-c47683d74562" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/search/SeqSearch.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/sort/RadixSorting.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/search/BinarySearch.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/尚硅谷图解Java数据结构和算法.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/尚硅谷图解Java数据结构和算法.pdf" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -49,6 +46,7 @@
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+     <property name="extract.method.default.visibility" value="private" />
++    <property name="nodejs_package_manager_path" value="npm" />
+   </component>
+   <component name="RunManager" selected="Application.BinarySearch">
+     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+@@ -116,13 +114,15 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
++    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+       <option name="arquillianRunConfiguration">
+         <value>
+           <option name="containerStateName" value="" />
+         </value>
+       </option>
+-      <option name="TEST_OBJECT" value="class" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+@@ -137,6 +137,7 @@
+       </list>
+     </recent_temporary>
+   </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="SvnConfiguration">
+     <configuration />
+   </component>
+@@ -149,7 +150,7 @@
+       <updated>1622725072098</updated>
+     </task>
+     <task active="true" id="Default" summary="Default task">
+-      <changelist id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="" />
++      <changelist id="52732827-e4b7-4905-b87c-c47683d74562" name="Default Changelist" comment="" />
+       <created>1622726898780</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+@@ -161,8 +162,16 @@
+       <workItem from="1623036967293" duration="1615000" />
+       <workItem from="1622726903711" duration="57000" />
+       <workItem from="1622726984694" duration="5704000" />
++      <workItem from="1623055076853" duration="2204000" />
++    </task>
++    <task id="LOCAL-00002" summary="归并算法">
++      <created>1623054623632</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1623054623632</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -171,60 +180,6 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="归并算法" />
+     <option name="LAST_COMMIT_MESSAGE" value="归并算法" />
+-  </component>
+-  <component name="WindowStateProjectService">
+-    <state x="313" y="0" key="CommitChangelistDialog2" timestamp="1622725070958">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state x="313" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1622725070958" />
+-    <state x="147" y="65" key="DiffContextDialog" timestamp="1622724233033">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1622724233033" />
+-    <state width="1493" height="144" key="GridCell.Tab.0.bottom" timestamp="1622735267479">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state width="1493" height="144" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622735267479" />
+-    <state width="1493" height="144" key="GridCell.Tab.0.center" timestamp="1622735267479">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state width="1493" height="144" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622735267479" />
+-    <state width="1493" height="144" key="GridCell.Tab.0.left" timestamp="1622735267479">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state width="1493" height="144" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622735267479" />
+-    <state width="1493" height="144" key="GridCell.Tab.0.right" timestamp="1622735267479">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state width="1493" height="144" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622735267479" />
+-    <state width="746" height="121" key="GridCell.Tab.1.bottom" timestamp="1622724887070">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state width="746" height="121" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622724887070" />
+-    <state width="746" height="121" key="GridCell.Tab.1.center" timestamp="1622724887070">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state width="746" height="121" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622724887070" />
+-    <state width="746" height="121" key="GridCell.Tab.1.left" timestamp="1622724887070">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state width="746" height="121" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622724887070" />
+-    <state width="746" height="121" key="GridCell.Tab.1.right" timestamp="1622724887070">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state width="746" height="121" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622724887070" />
+-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1622725086703">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1622725086703" />
+-    <state x="499" y="157" key="extract.method.dialog" timestamp="1622734518264">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state x="499" y="157" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1622734518264" />
+-    <state x="477" y="199" key="git4idea.merge.GitPullDialog" timestamp="1622724980514">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state x="477" y="199" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1622724980514" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
