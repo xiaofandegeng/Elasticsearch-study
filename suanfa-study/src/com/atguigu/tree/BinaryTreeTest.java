@@ -14,11 +14,13 @@ public class BinaryTreeTest {
         HeroNode node02 = new HeroNode(2, "吴用");
         HeroNode node03 = new HeroNode(3, "林冲");
         HeroNode node04 = new HeroNode(4, "武松");
+        HeroNode node05 = new HeroNode(5, "王胜");
 
-        tree.setRoot(node02);
-        node02.setLeft(node01);
-        node02.setRight(node03);
+        tree.setRoot(node01);
+        node01.setLeft(node02);
+        node01.setRight(node03);
         node03.setRight(node04);
+        node03.setLeft(node05);
 
 //        // 前序遍历
 //        tree.preOrder();

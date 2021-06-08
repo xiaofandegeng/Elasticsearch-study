@@ -71,6 +71,25 @@ public class HeroNode {
         }
     }
 
+    public HeroNode preOrderSearch(int no) {
+        System.out.println("进入前序遍历");
+        if (this.getNo() == no) {
+            return this;
+        }
+        HeroNode resNode = null;
+        if (this.left != null) {
+            resNode = this.left.preOrderSearch(no);
+        }
+        if (resNode != null) {
+            return resNode;
+        }
+        if (this.right != null) {
+            resNode = this.right.preOrderSearch(no);
+        }
+
+        return resNode;
+    }
+
     /**
      * 中序遍历
      */
@@ -86,6 +105,28 @@ public class HeroNode {
         }
     }
 
+    public HeroNode inFixSearch(int no) {
+        HeroNode resNode = null;
+        if (this.left != null) {
+            resNode = this.left.inFixSearch(no);
+        }
+        if (resNode != null) {
+            return resNode;
+        }
+
+        System.out.println("进入中序遍历");
+        if (this.getNo() == no) {
+            return this;
+        }
+
+        if (this.right != null) {
+            resNode = this.right.inFixSearch(no);
+        }
+
+        return resNode;
+    }
+
+
     public void nextOrder() {
 
         if (this.left != null) {
@@ -96,5 +137,28 @@ public class HeroNode {
         }
         // 先输出父节点
         System.out.println(this);
+    }
+
+    public HeroNode nextSearch(int no) {
+        HeroNode resNode = null;
+        if (this.left != null) {
+            resNode = this.left.nextSearch(no);
+        }
+        if (resNode != null) {
+            return resNode;
+        }
+
+        if (this.right != null) {
+            resNode = this.right.nextSearch(no);
+        }
+        if (resNode != null) {
+            return resNode;
+        }
+
+        System.out.println("进入后序遍历");
+        if (this.getNo() == no) {
+            return this;
+        }
+        return null;
     }
 }

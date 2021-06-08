@@ -14,23 +14,25 @@ public class BinaryTree {
     }
 
     public void preOrder() {
-        if(this.root!=null){
+        if (this.root != null) {
             this.root.preOrder();
-        }else {
+        } else {
             System.out.println("当前二叉树为空，无法遍历");
         }
     }
+
     public void infixOrder() {
-        if(this.root!=null){
+        if (this.root != null) {
             this.root.infixOrder();
-        }else {
+        } else {
             System.out.println("当前二叉树为空，无法遍历");
         }
     }
+
     public void nextOrder() {
-        if(this.root!=null){
+        if (this.root != null) {
             this.root.nextOrder();
-        }else {
+        } else {
             System.out.println("当前二叉树为空，无法遍历");
         }
     }
