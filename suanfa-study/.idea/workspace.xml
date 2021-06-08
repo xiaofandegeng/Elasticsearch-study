@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b61f901a-21eb-420e-8b32-93f0efba1da0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/tree/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/tree/BinaryTreeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/tree/HeroNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/hash/HashTableDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/hash/HashTableDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/hash/HashTableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/hash/HashTableDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/hash/HashTableList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/suanfa-study/com/atguigu/hash/HashTableList.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +51,26 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="Application.HashTableDemo">
+  <component name="RunManager" selected="Application.BinaryTreeTest">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.search.BinarySearch" />
       <module name="suanfa-study" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.atguigu.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.tree.BinaryTreeTest" />
+      <module name="suanfa-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,19 +117,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeqSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.search.SeqSearch" />
-      <module name="suanfa-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -130,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinaryTreeTest" />
         <item itemvalue="Application.HashTableDemo" />
         <item itemvalue="Application.FibonacciSearch" />
         <item itemvalue="Application.InterpolationSearch" />
         <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.SeqSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +178,29 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="归并算法" />
