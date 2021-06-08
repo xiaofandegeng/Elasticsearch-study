@@ -12,7 +12,7 @@ public class HashTableDemo {
     public static void main(String[] args) {
         HashTableList hashTableList = new HashTableList(7);
         //写一个简单的菜单
-        String key = "";
+        String key;
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("add: 添加雇员");
@@ -48,8 +48,8 @@ public class HashTableDemo {
 }
 
 class HashTableList {
-    private int size;
-    private EmpLinkedList[] empLinkedLists;
+    private final int size;
+    private final EmpLinkedList[] empLinkedLists;
 
     public HashTableList(int size) {
         this.size = size;
