@@ -4,7 +4,47 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a84d3b8c-f931-43b6-b6c5-88f9939666b9" name="Default Changelist" comment="" />
+    <list default="true" id="a84d3b8c-f931-43b6-b6c5-88f9939666b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/hash/Emp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/hash/EmpLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/hash/HashTableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/hash/HashTableList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/linkedlist/circle/Boy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/linkedlist/circle/CircleLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/linkedlist/circle/CircleLinkedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/linkedlist/doubleList/DoubleLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/linkedlist/doubleList/DoubleLinkedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/linkedlist/doubleList/HeroNode2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/linkedlist/singleList/HeroNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/linkedlist/singleList/SingleLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/linkedlist/singleList/SingleLinkedListDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/linkedlist/singleList/SingleLinkedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/queue/QueueArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/queue/QueueArrayTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/recursion/EightQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/recursion/EightQueueTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/recursion/Maze.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/search/BinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/search/FibonacciSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/search/InterpolationSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/search/SeqSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/sort/BubbleSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/sort/CommonMethods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/sort/InsertionSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/sort/MergeSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/sort/QuickSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/sort/RadixSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/sort/SelectSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/sort/ShellSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/sparearray/SpareArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/stack/ArrayStackTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/stack/Arraystack2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/stack/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/stack/PolandNotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/tree/BinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/tree/BinaryTreeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suanfa-study/out/production/suanfa-study/com/atguigu/tree/HeroNode.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,17 +122,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.SingleLinkedListTest" />
       <item itemvalue="Application.SpareArray" />
@@ -107,6 +136,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a84d3b8c-f931-43b6-b6c5-88f9939666b9" name="Default Changelist" comment="" />
@@ -118,11 +150,12 @@
       <workItem from="1621481340786" duration="754000" />
       <workItem from="1621558702056" duration="1616000" />
       <workItem from="1621940883039" duration="5761000" />
+      <workItem from="1628663760421" duration="33000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
