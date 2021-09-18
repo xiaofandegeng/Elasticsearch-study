@@ -4,6 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>springMVC-demo01</module>
+        <module>springMVC-demo02</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
