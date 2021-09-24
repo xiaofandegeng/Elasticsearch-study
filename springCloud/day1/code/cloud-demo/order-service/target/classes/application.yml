@@ -10,11 +10,7 @@ spring:
     name: orderservice
   cloud:
     nacos:
-      server-addr: localhost:8848
-      discovery:
-        cluster-name: HZ
-        namespace: 5824d694-cae1-4d3e-bf93-34a61de8cae3
-        ephemeral: false
+      server-addr: localhost:8010
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
@@ -34,3 +30,13 @@ logging:
 userservice:
   ribbon:
     NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule # 负载均衡规则
+#feign:
+#  client:
+#    config:
+#      default:
+#        loggerLevel: FULL
+feign:
+  httpclient:
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50
