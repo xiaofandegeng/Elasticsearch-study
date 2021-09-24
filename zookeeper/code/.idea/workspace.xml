@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="019ac954-a7ba-4ffc-bb55-b8e42342d482" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\code\mavencangku" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../code/maven/apache-maven-3.6.2-bin/apache-maven-3.6.2" />
+        <option name="userSettingsFile" value="D:\code\maven\apache-maven-3.6.2-bin\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1yIhHQAPAqPLE13VINyBJxHCPM2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.case1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CuratorLockTest">
+    <configuration name="CuratorLockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.case3.CuratorLockTest" />
+      <module name="zookeeper01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.case3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DistributeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.case1.DistributeClient" />
+      <module name="zookeeper01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.case1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DistributeLockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.case2.DistributeLockTest" />
+      <module name="zookeeper01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.case2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DistributeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.case1.DistributeServer" />
+      <module name="zookeeper01" />
+      <option name="PROGRAM_PARAMETERS" value="hadoop102" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.case1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZkClient.exist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zookeeper01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.zk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.zk" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.zk.ZkClient" />
+      <option name="METHOD_NAME" value="exist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DistributeClient" />
+      <item itemvalue="Application.DistributeServer" />
+      <item itemvalue="JUnit.ZkClient.exist" />
+      <item itemvalue="Application.DistributeLockTest" />
+      <item itemvalue="Application.CuratorLockTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CuratorLockTest" />
+        <item itemvalue="Application.DistributeLockTest" />
+        <item itemvalue="Application.DistributeServer" />
+        <item itemvalue="Application.DistributeClient" />
+        <item itemvalue="JUnit.ZkClient.exist" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="019ac954-a7ba-4ffc-bb55-b8e42342d482" name="Default Changelist" comment="" />
+      <created>1631944921849</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631944921849</updated>
+      <workItem from="1631944924713" duration="2239000" />
+      <workItem from="1631947190833" duration="6790000" />
+      <workItem from="1632366654300" duration="7430000" />
+    </task>
+    <task id="LOCAL-00001" summary="zk代码的初步完成">
+      <created>1631949364024</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631949364024</updated>
+    </task>
+    <task id="LOCAL-00002" summary="注册服务的监控">
+      <created>1631955493212</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631955493212</updated>
+    </task>
+    <task id="LOCAL-00003" summary="zk分布式锁">
+      <created>1632371022059</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632371022059</updated>
+    </task>
+    <task id="LOCAL-00004" summary="zk Curator框架的初步使用">
+      <created>1632371847619</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632371847619</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="zk代码的初步完成" />
+    <MESSAGE value="注册服务的监控" />
+    <MESSAGE value="zk分布式锁" />
+    <MESSAGE value="zk Curator框架的初步使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="zk Curator框架的初步使用" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1631955440462">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631955440462" />
+    <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1631949889093">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631949889093" />
+    <state x="2363" y="0" key="CommitChangelistDialog2" timestamp="1632371847098">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="2363" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632371847098" />
+    <state x="2474" y="87" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631955492650" />
+    <state x="2512" y="217" key="FileChooserDialogImpl" timestamp="1632379390936">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="2512" y="217" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632379390936" />
+    <state x="2660" y="274" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631945000911" />
+    <state width="1493" height="201" key="GridCell.Tab.0.bottom" timestamp="1632379397623">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632379397623" />
+    <state width="1875" height="288" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631955454227" />
+    <state width="1493" height="201" key="GridCell.Tab.0.center" timestamp="1632379397623">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="201" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632379397623" />
+    <state width="1875" height="288" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631955454227" />
+    <state width="1493" height="201" key="GridCell.Tab.0.left" timestamp="1632379397623">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="201" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632379397623" />
+    <state width="1875" height="288" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631955454227" />
+    <state width="1493" height="201" key="GridCell.Tab.0.right" timestamp="1632379397623">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="201" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632379397623" />
+    <state width="1875" height="288" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631955454227" />
+    <state x="2381" y="164" key="SettingsEditor" timestamp="1631947515541">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2381" y="164" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631947515541" />
+    <state x="2362" y="200" key="Vcs.Push.Dialog.v2" timestamp="1632371849346">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="2362" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632371849346" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631955522122" />
+    <state x="2522" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632371025915">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="2522" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632371025915" />
+    <state x="2673" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631955526259" />
+    <state x="2419" y="161" key="extract.method.dialog" timestamp="1632371785982">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="2419" y="161" key="extract.method.dialog/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632371785982" />
+    <state x="2388" y="10" width="600" height="804" key="find.popup" timestamp="1632368987585">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="2388" y="10" width="600" height="804" key="find.popup/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632368987585" />
+    <state x="2098" y="73" key="new project wizard" timestamp="1632379395525">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="2098" y="73" key="new project wizard/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632379395525" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/zookeeper01$ZkClient_create.ic" NAME="ZkClient.create Coverage Results" MODIFIED="1631947742822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.atguigu.zk.*</FILTER>
+    </SUITE>
+  </component>
+</project>
