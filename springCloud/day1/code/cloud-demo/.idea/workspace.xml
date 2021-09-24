@@ -91,6 +91,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserApplication 3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.user.UserApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8083" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="user-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.user.UserApplication" />
@@ -115,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632454744610</updated>
       <workItem from="1632454748800" duration="588000" />
-      <workItem from="1632455355836" duration="7469000" />
+      <workItem from="1632455355836" duration="8433000" />
     </task>
     <servers />
   </component>
@@ -132,6 +141,10 @@
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="2216" y="6" key="#UserApplication_(1)/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632460816142" />
+    <state x="2216" y="0" width="957" height="824" key="#UserApplication_2_(1)" timestamp="1632464589625">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="2216" y="0" width="957" height="824" key="#UserApplication_2_(1)/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632464589625" />
     <state width="607" height="466" key="DebuggerActiveHint" timestamp="1632461679683">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
@@ -140,22 +153,22 @@
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="2469" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632455234903" />
-    <state width="1211" height="164" key="GridCell.Tab.0.bottom" timestamp="1632464256759">
+    <state width="1211" height="400" key="GridCell.Tab.0.bottom" timestamp="1632465261555">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1211" height="164" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632464256759" />
-    <state width="1211" height="164" key="GridCell.Tab.0.center" timestamp="1632464256759">
+    <state width="1211" height="400" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632465261555" />
+    <state width="1211" height="400" key="GridCell.Tab.0.center" timestamp="1632465261555">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1211" height="164" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632464256759" />
-    <state width="1211" height="164" key="GridCell.Tab.0.left" timestamp="1632464256759">
+    <state width="1211" height="400" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632465261555" />
+    <state width="1211" height="400" key="GridCell.Tab.0.left" timestamp="1632465261555">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1211" height="164" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632464256759" />
-    <state width="1211" height="164" key="GridCell.Tab.0.right" timestamp="1632464256759">
+    <state width="1211" height="400" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632465261555" />
+    <state width="1211" height="400" key="GridCell.Tab.0.right" timestamp="1632465261555">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1211" height="164" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632464256759" />
+    <state width="1211" height="400" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1632465261555" />
     <state x="2190" y="0" key="SettingsEditor" timestamp="1632457089377">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
