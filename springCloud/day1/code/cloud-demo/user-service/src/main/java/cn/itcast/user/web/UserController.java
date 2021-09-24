@@ -37,9 +37,13 @@ public class UserController {
 //    public User queryById(@PathVariable("id") Long id) {
 //        return userService.queryById(id);
 //    }
-
     @GetMapping("/now")
     public String now() {
         return LocalDateTime.now().format(DateTimeFormatter.ofPattern(pattern.getDateFormat()));
+    }
+
+    @GetMapping("/prop")
+    public PatternProperties prop() {
+        return pattern;
     }
 }
